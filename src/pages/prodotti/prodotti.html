@@ -1,0 +1,32 @@
+<!--
+  Generated template for the ProdottiPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Prodotti</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <tbody>
+   <!--  <% prodotti.forEach(function(prodotto) { %>
+      <tr>
+       <td class="align-baseline"><%=prodotto.nome %></td>
+       <td class="align-top"><%= student.codice %></td>
+       <td class="align-top"><%= student.surname %></td>
+     </tr>
+     <% }); %>
+   </tbody> -->
+  <li>{{prodottiAssortiti}}</li>
+    <li *ngFor="let prodotti of ProdottiAssortiti">
+        {{ prodotti }}
+      </li>
+    <button ion-button full color="light" (click)="visProd()">Prodotti</button>
+
+</ion-content>
