@@ -28,8 +28,6 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-
-
 app.get('/prodotti', function (req, res) {
   sqllite.getProdotti(function (Prodotti){
     var prodotti ={};
