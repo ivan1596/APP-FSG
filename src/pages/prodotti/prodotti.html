@@ -4,6 +4,9 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+ <!--codice per uscire le proprietà dei prodotti dal db <li *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">
+              {{ visualizzaProdottiCompleti.datascadenza}}
+            </li>-->
 <ion-header>
 
   <ion-navbar>
@@ -11,22 +14,20 @@
   </ion-navbar>
 
 </ion-header>
-
-
 <ion-content padding>
     <tbody>
-   <!--  <% prodotti.forEach(function(prodotto) { %>
-      <tr>
-       <td class="align-baseline"><%=prodotto.nome %></td>
-       <td class="align-top"><%= student.codice %></td>
-       <td class="align-top"><%= student.surname %></td>
-     </tr>
-     <% }); %>
-   </tbody> -->
-  <li>{{prodottiAssortiti}}</li>
-    <li *ngFor="let prodotti of ProdottiAssortiti">
-        {{ prodotti }}
-      </li>
-    <button ion-button full color="light" (click)="visProd()">Prodotti</button>
-
+      <ion-list id="product-List">
+        <ion-item  *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">
+           <h1>
+              {{visualizzaProdottiCompleti.nome}}
+           </h1>
+           <h2>
+              <b>Data Scadenza: </b>{{ visualizzaProdottiCompleti.datascadenza}}
+           </h2>
+           <h2>
+              <b>Codice Prodotto: </b>{{ visualizzaProdottiCompleti.codice}}
+           </h2>  
+        </ion-item>
+      </ion-list> 
+     <button ion-button full color="light" (click)="visProd()">Prodotti</button>
 </ion-content>

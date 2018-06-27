@@ -15,24 +15,30 @@ import { map } from 'rxjs/operators';
   templateUrl: 'prodotti.html',
 })
 export class ProdottiPage { 
-
+  prodottiListFor: any;
+  
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
   }
-
-
+  
   prodottiAssortiti=[];
+  visualizzaProdotti=[];
+  
   visProd(){
+      //req di productList
       this.http.get('http://localhost:8080/prodotti' ).pipe(
-            map(res => res.json())
-        ).subscribe(prodotti => {
-          console.log(prodotti)
-         // console.log( res.json())
-            this.prodottiAssortiti=prodotti;
-            console.log('GET Response:', this.prodottiAssortiti);
-        });
-  }
-
-
+          map(res => res.json())
+      ).subscribe(productList => {
+        //console.log("productList object",productList);
+        //this.visualizzaProdotti.push(productList.Prodotti[0]);
+        for(var x in productList.Prodotti){
+          this.visualizzaProdotti[x]=productList.Prodotti[x];
+          console.log("Oggetto nell indice: ",x+" ",this.visualizzaProdotti[x]);
+          //console.log("vidsualizzaProdotti nome nell'indice: ",x+" ",this.visualizzaProdotti[x].nome);
+          //console.log("visualizzaProdotti codice nell'indice: ",x+" ",this.visualizzaProdotti[x].codice);
+          //console.log("visualizzaProdotti scadenza nell'indice: ",x+" ",this.visualizzaProdotti[x].datascadenza);
+        }      
+      });       
+  }  
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProdottiPage');
   }
