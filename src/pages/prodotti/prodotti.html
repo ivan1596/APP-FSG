@@ -4,6 +4,9 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+ <!--codice per uscire le proprietà dei prodotti dal db <li *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">
+              {{ visualizzaProdottiCompleti.datascadenza}}
+            </li>-->
 <ion-header>
 
   <ion-navbar>
@@ -11,22 +14,34 @@
   </ion-navbar>
 
 </ion-header>
-
-
 <ion-content padding>
-    <tbody>
-   <!--  <% prodotti.forEach(function(prodotto) { %>
-      <tr>
-       <td class="align-baseline"><%=prodotto.nome %></td>
-       <td class="align-top"><%= student.codice %></td>
-       <td class="align-top"><%= student.surname %></td>
-     </tr>
-     <% }); %>
-   </tbody> -->
-  <li>{{prodottiAssortiti}}</li>
-    <li *ngFor="let prodotti of ProdottiAssortiti">
-        {{ prodotti }}
-      </li>
-    <button ion-button full color="light" (click)="visProd()">Prodotti</button>
-
+      <!--<ion-list id="product-List">
+        <ion-item  *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">
+              <ion-label>{{visualizzaProdottiCompleti.nome}}</ion-label><br> 
+              <ion-radio value="Idoneo"></ion-radio><br>
+              <ion-label> <b>Data Scadenza: </b>{{ visualizzaProdottiCompleti.datascadenza}}</ion-label>
+              <ion-label> <b>Codice Prodotto: </b>{{ visualizzaProdottiCompleti.codice}}</ion-label> 
+        </ion-item>
+      </ion-list> -->
+      <ion-list >
+       <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">
+         <ion-card>
+            
+           <ion-card-header>
+            <b>{{visualizzaProdottiCompleti.nome}}</b>
+           </ion-card-header>
+           <ion-card-content>
+              <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>
+              <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> 
+              <ion-item>
+                  <ion-radio  value="Idoneo" (ionSelect)="InserisciProdottiIdonei(visualizzaProdottiCompleti)"></ion-radio>
+               </ion-item>
+           </ion-card-content>
+        
+         </ion-card>
+       
+       </ion-item>
+      </ion-list>
+     <!--<button ion-button full color="light" (click)="visProd()">Prodotti</button>-->
+     <button ion-button full color="light" (click)="inviaProd()">InviaProdottiIdonei</button>
 </ion-content>

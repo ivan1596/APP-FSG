@@ -4,10 +4,68 @@ webpackJsonp([3],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeWorkPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__ = __webpack_require__(180);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the HomeWorkPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var HomeWorkPage = /** @class */ (function () {
+    function HomeWorkPage(navCtrl, navParams, barcodeScanner) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.barcodeScanner = barcodeScanner;
+    }
+    HomeWorkPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HomeWorkPage');
+    };
+    HomeWorkPage.prototype.scansiona = function () {
+        var _this = this;
+        this.codice = {};
+        this.barcodeScanner.scan().then(function (barcodeData) {
+            _this.codice = barcodeData.text;
+            console.log('Barcode data', _this.codice);
+        }).catch(function (err) {
+            console.log('Error', err);
+        });
+    };
+    HomeWorkPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-home-work',template:/*ion-inline-start:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\pages\home-work\home-work.html"*/'<!--\n\n  Generated template for the HomeWorkPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>HomeWork</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n     <!-- <form (ngSubmit)="productForm()">-->\n\n        <ion-item>\n\n          <ion-label floating>Nome Prodotto</ion-label>\n\n          <ion-input type="text" ></ion-input>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label floating>Codice</ion-label>\n\n          <ion-input type="text" value="{{codice}}"></ion-input>\n\n        </ion-item>\n\n        \n\n        <ion-item>\n\n            <ion-label floating>Data Scadenza</ion-label>\n\n            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>\n\n        </ion-item>\n\n       \n\n       \n\n      <!--</form>-->\n\n        <button ion-button full (click)="aggiungi()">AGGIUNGI PRODOTTO</button>\n\n        <button ion-button full (click)="scansiona()">SCANSIONA PRODOTTO</button>\n\n      \n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\pages\home-work\home-work.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]])
+    ], HomeWorkPage);
+    return HomeWorkPage;
+}());
+
+//# sourceMappingURL=home-work.js.map
+
+/***/ }),
+
+/***/ 124:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work_home_work__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work_home_work__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prodotti_prodotti__ = __webpack_require__(125);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -62,7 +120,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\pages\login\login.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n    <!-- <ion-content padding>\n      <ion-list>\n\n        <ion-item>\n          <ion-label stacked>Username</ion-label>\n          <ion-input type="text"></ion-input>\n        </ion-item>\n      \n        <ion-item>\n          <ion-label stacked>Password</ion-label>\n          <ion-input type="password"></ion-input>\n        </ion-item>\n\n        <button ion-button full (click)="goToHome()">LOGIN</button>\n\n        <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n      \n      </ion-list> \n    </ion-content> -->\n\n    <ion-content padding>\n        <!--<form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">-->\n          <form #loginForm="ngForm" autocomplete="off" method="post" (ngSubmit)="logForm()" >\n          <ion-row>\n            <ion-col>\n              <ion-list inset>\n                <ion-item>\n                  <ion-input placeholder="Username" name="username" id="loginField" type="text" required [(ngModel)]="username" autocomplete="off" ></ion-input>\n                </ion-item>\n                <ion-item>\n                  <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>\n                </ion-item>\n              </ion-list>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col>\n              <div *ngIf="error" class="alert alert-danger">{{error}}</div>\n              <!-- <button ion-button full class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid" (click)="goToHome()">Login</button> -->\n              <button ion-button full (click)="goToHome()" [disabled]="!loginForm.form.valid" class="submit-btn" full type="submit">LOGIN</button>\n              <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n            </ion-col>\n          </ion-row>\n        </form>\n      </ion-content>\n    \n   \n      \n      \n\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\pages\login\login.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n    <!-- <ion-content padding>\n\n      <ion-list>\n\n\n\n        <ion-item>\n\n          <ion-label stacked>Username</ion-label>\n\n          <ion-input type="text"></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-label stacked>Password</ion-label>\n\n          <ion-input type="password"></ion-input>\n\n        </ion-item>\n\n\n\n        <button ion-button full (click)="goToHome()">LOGIN</button>\n\n\n\n        <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n\n      \n\n      </ion-list> \n\n    </ion-content> -->\n\n\n\n    <ion-content padding>\n\n        <!--<form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">-->\n\n          <form #loginForm="ngForm" autocomplete="off" method="post" (ngSubmit)="logForm()" >\n\n          <ion-row>\n\n            <ion-col>\n\n              <ion-list inset>\n\n                <ion-item>\n\n                  <ion-input placeholder="Username" name="username" id="loginField" type="text" required [(ngModel)]="username" autocomplete="off" ></ion-input>\n\n                </ion-item>\n\n                <ion-item>\n\n                  <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>\n\n                </ion-item>\n\n              </ion-list>\n\n            </ion-col>\n\n          </ion-row>\n\n          <ion-row>\n\n            <ion-col>\n\n              <div *ngIf="error" class="alert alert-danger">{{error}}</div>\n\n              <!-- <button ion-button full class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid" (click)="goToHome()">Login</button> -->\n\n              <button ion-button full (click)="goToHome()" [disabled]="!loginForm.form.valid" class="submit-btn" full type="submit">LOGIN</button>\n\n              <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n\n            </ion-col>\n\n          </ion-row>\n\n        </form>\n\n      </ion-content>\n\n    \n\n   \n\n      \n\n      \n\n\n\n\n\n'/*ion-inline-end:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
     ], LoginPage);
@@ -70,64 +128,6 @@ var LoginPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=login.js.map
-
-/***/ }),
-
-/***/ 124:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeWorkPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__ = __webpack_require__(180);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the HomeWorkPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var HomeWorkPage = /** @class */ (function () {
-    function HomeWorkPage(navCtrl, navParams, barcodeScanner) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.barcodeScanner = barcodeScanner;
-    }
-    HomeWorkPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad HomeWorkPage');
-    };
-    HomeWorkPage.prototype.scansiona = function () {
-        var _this = this;
-        this.codice = {};
-        this.barcodeScanner.scan().then(function (barcodeData) {
-            _this.codice = barcodeData.text;
-            console.log('Barcode data', _this.codice);
-        }).catch(function (err) {
-            console.log('Error', err);
-        });
-    };
-    HomeWorkPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-work',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\pages\home-work\home-work.html"*/'<!--\n  Generated template for the HomeWorkPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>HomeWork</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list>\n     <!-- <form (ngSubmit)="productForm()">-->\n        <ion-item>\n          <ion-label floating>Nome Prodotto</ion-label>\n          <ion-input type="text" ></ion-input>\n        </ion-item>\n\n        <ion-item>\n          <ion-label floating>Codice</ion-label>\n          <ion-input type="text" value="{{codice}}"></ion-input>\n        </ion-item>\n        \n        <ion-item>\n            <ion-label floating>Data Scadenza</ion-label>\n            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>\n        </ion-item>\n       \n       \n      <!--</form>-->\n        <button ion-button full (click)="aggiungi()">AGGIUNGI PRODOTTO</button>\n        <button ion-button full (click)="scansiona()">SCANSIONA PRODOTTO</button>\n      \n      </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\pages\home-work\home-work.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__["a" /* BarcodeScanner */]])
-    ], HomeWorkPage);
-    return HomeWorkPage;
-}());
-
-//# sourceMappingURL=home-work.js.map
 
 /***/ }),
 
@@ -166,26 +166,56 @@ var ProdottiPage = /** @class */ (function () {
         this.navParams = navParams;
         this.http = http;
         this.prodottiAssortiti = [];
+        this.visualizzaProdotti = [];
+        this.prodottiInseriti = [];
     }
+    ProdottiPage.prototype.inviaProd = function () {
+        console.log("Hai inviato i prodotti selezionati come idonei al server");
+    };
+    ProdottiPage.prototype.InserisciProdottiIdonei = function (Oggetto) {
+        console.log("Hai inserito ", Oggetto.nome, " (Codice: ", Oggetto.codice, " )indicandolo come prodotto idoneo");
+        this.prodottiInseriti.push(Oggetto);
+        //console.log("l'array prodotti inseriti [0] vale: ",this.prodottiInseriti[0]);
+    };
     ProdottiPage.prototype.visProd = function () {
         var _this = this;
-        this.http.get('http://localhost:8080/prodotti').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (prodotti) {
-            console.log(prodotti);
-            // console.log( res.json())
-            _this.prodottiAssortiti = prodotti;
-            console.log('GET Response:', _this.prodottiAssortiti);
+        //req di productList
+        this.http.get('http://localhost:8080/prodotti').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (productList) {
+            //console.log("productList object",productList);
+            //this.visualizzaProdotti.push(productList.Prodotti[0]);
+            for (var x in productList.Prodotti) {
+                _this.visualizzaProdotti[x] = productList.Prodotti[x];
+                console.log("Oggetto nell indice: ", x + " ", _this.visualizzaProdotti[x]);
+                //console.log("vidsualizzaProdotti nome nell'indice: ",x+" ",this.visualizzaProdotti[x].nome);
+                //console.log("visualizzaProdotti codice nell'indice: ",x+" ",this.visualizzaProdotti[x].codice);
+                //console.log("visualizzaProdotti scadenza nell'indice: ",x+" ",this.visualizzaProdotti[x].datascadenza);
+            }
         });
     };
     ProdottiPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
         console.log('ionViewDidLoad ProdottiPage');
+        //req di productList
+        this.http.get('http://localhost:8080/prodotti').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (productList) {
+            //console.log("productList object",productList);
+            //this.visualizzaProdotti.push(productList.Prodotti[0]);
+            for (var x in productList.Prodotti) {
+                _this.visualizzaProdotti[x] = productList.Prodotti[x];
+                console.log("Oggetto nell indice: ", x + " ", _this.visualizzaProdotti[x]);
+                //console.log("vidsualizzaProdotti nome nell'indice: ",x+" ",this.visualizzaProdotti[x].nome);
+                //console.log("visualizzaProdotti codice nell'indice: ",x+" ",this.visualizzaProdotti[x].codice);
+                //console.log("visualizzaProdotti scadenza nell'indice: ",x+" ",this.visualizzaProdotti[x].datascadenza);
+            }
+        });
     };
     ProdottiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-prodotti',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\pages\prodotti\prodotti.html"*/'<!--\n  Generated template for the ProdottiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Prodotti</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <tbody>\n   <!--  <% prodotti.forEach(function(prodotto) { %>\n      <tr>\n       <td class="align-baseline"><%=prodotto.nome %></td>\n       <td class="align-top"><%= student.codice %></td>\n       <td class="align-top"><%= student.surname %></td>\n     </tr>\n     <% }); %>\n   </tbody> -->\n  <li>{{prodottiAssortiti}}</li>\n    <li *ngFor="let prodotti of ProdottiAssortiti">\n        {{ prodotti }}\n      </li>\n    <button ion-button full color="light" (click)="visProd()">Prodotti</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\pages\prodotti\prodotti.html"*/,
+            selector: 'page-prodotti',template:/*ion-inline-start:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\pages\prodotti\prodotti.html"*/'<!--\n\n  Generated template for the ProdottiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n <!--codice per uscire le proprietà dei prodotti dal db <li *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n              {{ visualizzaProdottiCompleti.datascadenza}}\n\n            </li>-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prodotti</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n      <!--<ion-list id="product-List">\n\n        <ion-item  *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n              <ion-label>{{visualizzaProdottiCompleti.nome}}</ion-label><br> \n\n              <ion-radio value="Idoneo"></ion-radio><br>\n\n              <ion-label> <b>Data Scadenza: </b>{{ visualizzaProdottiCompleti.datascadenza}}</ion-label>\n\n              <ion-label> <b>Codice Prodotto: </b>{{ visualizzaProdottiCompleti.codice}}</ion-label> \n\n        </ion-item>\n\n      </ion-list> -->\n\n      <ion-list >\n\n       <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n         <ion-card>\n\n            \n\n           <ion-card-header>\n\n            <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n           </ion-card-header>\n\n           <ion-card-content>\n\n              <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n              <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n              <ion-item>\n\n                  <ion-radio  value="Idoneo" (ionSelect)="InserisciProdottiIdonei(visualizzaProdottiCompleti)"></ion-radio>\n\n               </ion-item>\n\n           </ion-card-content>\n\n        \n\n         </ion-card>\n\n       \n\n       </ion-item>\n\n      </ion-list>\n\n     <!--<button ion-button full color="light" (click)="visProd()">Prodotti</button>-->\n\n     <button ion-button full color="light" (click)="inviaProd()">InviaProdottiIdonei</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\pages\prodotti\prodotti.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]) === "function" && _c || Object])
     ], ProdottiPage);
     return ProdottiPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=prodotti.js.map
@@ -214,11 +244,11 @@ webpackEmptyAsyncContext.id = 136;
 
 var map = {
 	"../pages/home-work/home-work.module": [
-		400,
+		399,
 		2
 	],
 	"../pages/login/login.module": [
-		399,
+		400,
 		1
 	],
 	"../pages/prodotti/prodotti.module": [
@@ -266,9 +296,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(241);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_work_home_work__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_work_home_work__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(397);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(182);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_camera__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_barcode_scanner__ = __webpack_require__(180);
@@ -308,8 +338,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_8__angular_http__["c" /* JsonpModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-work/home-work.module#HomeWorkPageModule', name: 'HomeWorkPage', segment: 'home-work', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/prodotti/prodotti.module#ProdottiPageModule', name: 'ProdottiPage', segment: 'prodotti', priority: 'low', defaultHistory: [] }
                     ]
                 })
@@ -346,7 +376,7 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(241);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(240);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(124);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -372,7 +402,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\FSG_APP\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Raf\Desktop\unicam\pw\progettoPWforkato\app-fsg\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

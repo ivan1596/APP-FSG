@@ -20,7 +20,7 @@ module.exports = {
                 prodotto.codice=row.Codice;
                 prodotto.nome = row.Nome;
                 prodotto.datascadenza = row.DataScadenza;
-                console.log("prodotto", prodotto)
+                //console.log("prodotto", prodotto) se vuoi vedere il prodotto su console quando clicchi sul pulsante prodotto cancella questo commento 
                 Prodotti.push(prodotto)
                 
             });
