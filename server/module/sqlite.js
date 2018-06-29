@@ -3,21 +3,16 @@ const database = './Prodotti.db';
 
 
 module.exports= {
-    modIdoneo: function(){
-        let db = new sqlite3.Database(database);
-        let sql = 'SELECT * FROM PRODOTTI';//SOSTITUIRE QUESTA QUERY CON QUELLA SOTTO OPPURE...VEDI SOTTO
-        db.all(sql, [], (err) => {
-            if (err) {
-                throw err;
-            }
-            //QUA DENTRO DOVREMMO CICLARE L'ARRAY E PER OGNI CODICE ESEGUIRE LA QUERY QUI SOTTO
-
-            //var sql2 = "UPDATE PRODOTTI SET IDONEO = 'SI' WHERE CODICE = %VARIABILEDAAPP%";
-            
-           
-
+    modIdoneo: function(codIdo){
+        codice= this.codIdo;
+        let db = new sqlite3.Database(database,(err)=>{
+        if (err) {
+            console.error(err.message);
+        }
+        
+        connection.query('UPDATE PRODOTTI SET IDONEO = "SI" WHERE CODICE = ?',[codice]);//SOSTITUIRE QUESTA QUERY CON QUELLA SOTTO OPPURE...VEDI SOTTO
+        
         });
-
         db.close();
 
         

@@ -53,8 +53,14 @@ app.get('/prodotti', function (req, res) {
 
 
 app.post('/modIdoneo', function(req, res){
- 
+
+  
   console.log(req.body);
+  var codIdo;
+  for(c in req.body){
+    CodIdo = c;
+    sqllite.modIdoneo(codIdo);
+  }
 
 });
 //Inizializza il server
