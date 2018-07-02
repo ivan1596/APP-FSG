@@ -2,22 +2,25 @@ const sqlite3 = require('sqlite3').verbose();
 const database = './Prodotti.db';
 
 
-module.exports= {
-    modIdoneo: function(codIdo){
-        codice= this.codIdo;
-        let db = new sqlite3.Database(database,(err)=>{
+    module.exports = {
+        IdoneoSN : function (codice){
+        
+        let sql ='UPDATE PRODOTTI SET IDONEO = "SI" WHERE CODICE = ?';
+        let db =  new sqlite3.Database(database);
+        db.run(sql,codice, function(err){
         if (err) {
             console.error(err.message);
-        }
-        
-        connection.query('UPDATE PRODOTTI SET IDONEO = "SI" WHERE CODICE = ?',[codice]);//SOSTITUIRE QUESTA QUERY CON QUELLA SOTTO OPPURE...VEDI SOTTO
-        
+            }
+
+        //db.query('UPDATE PRODOTTI SET IDONEO = "SI" WHERE CODICE = ?',[codice]); SOSTITUIRE QUESTA QUERY CON QUELLA SOTTO OPPURE...VEDI SOTTO
+        console.log('Cambiamenti effettuati');
+
         });
         db.close();
 
-        
-    }
-}
+        }
+      }  
+
 module.exports = {
     
     getProdotti: function (callback) {

@@ -5,8 +5,9 @@ var bodyParser = require('body-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override')
 var cors = require('cors');
-var sqllite = require("./module/sqlite.js");
-
+var sqlite = require("./module/sqlite.js");
+const sqlite3 = require('sqlite3').verbose();
+const database = './Prodotti.db';
 const app = express();
 app.use(logger('dev'));
 
@@ -30,7 +31,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/prodotti', function (req, res) {
-  sqllite.getProdotti(function (Prodotti){
+  sqlite.getProdotti(function (Prodotti){
     var prodotti ={};
     var Arraynomi= {};
     var ArrayCodice={};
@@ -53,14 +54,24 @@ app.get('/prodotti', function (req, res) {
 
 
 app.post('/modIdoneo', function(req, res){
+        //JSON.parse(res.body);
+        console.log(req.body);
+        let sql ='UPDATE PRODOTTI SET IDONEO = "SI" WHERE CODICE = ?';
+        let db =  new sqlite3.Database(database);
+        let codice =[];
+        
+        for(c in req.body){
+        codice.push(req.body[c]);
+        console.log(codice);
+        db.run(sql,codice, function(err){
+        if (err) {
+            console.error(err.message);
+            }
+        console.log('Cambiamenti effettuati');
 
+        });}
+        db.close();
   
-  console.log(req.body);
-  var codIdo;
-  for(c in req.body){
-    CodIdo = c;
-    sqllite.modIdoneo(codIdo);
-  }
 
 });
 //Inizializza il server

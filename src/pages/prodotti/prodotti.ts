@@ -2,12 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { map } from 'rxjs/operators';
-/**
- * Generated class for the ProdottiPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ToastController } from 'ionic-angular';
+
 
 @IonicPage()
 @Component({
@@ -17,7 +13,7 @@ import { map } from 'rxjs/operators';
 export class ProdottiPage { 
   prodottiListFor: any;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, private toastCtrl: ToastController) {
   }
   prodottiAssortiti=[];
   visualizzaProdotti=[];
@@ -26,7 +22,7 @@ export class ProdottiPage {
     console.log("Hai inviato i prodotti selezionati come idonei al server");
   }
   InserisciProdottiIdonei(CodIdo:any){
-    console.log("Hai inserito ",CodIdo," (Codice: ",CodIdo," )indicandolo come prodotto idoneo");
+    console.log("Hai inserito ",CodIdo,"indicandolo come prodotto idoneo");
     this.CodProdottiIdonei.push(CodIdo);
     JSON.stringify(this.CodProdottiIdonei);
     this.http.post('http://localhost:8080/modIdoneo',this.CodProdottiIdonei ).pipe(
@@ -34,7 +30,15 @@ export class ProdottiPage {
         ).subscribe(response => {
           console.log('POST Response:', response);
         });
-    //console.log("l'array prodotti inseriti [0] vale: ",this.prodottiInseriti[0]);
+
+        let toast = this.toastCtrl.create({
+          message: "Elemento idoneo aggiunto nel DataBase",
+          duration: 3000,
+          position: 'top'
+        });
+        toast.present();
+
+    
   }
   
   
