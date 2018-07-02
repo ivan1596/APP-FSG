@@ -11,7 +11,8 @@ import { Camera } from '@ionic-native/camera';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { ProdottiPage } from '../pages/prodotti/prodotti';
 import { HomeAziendaPage } from '../pages/home-azienda/home-azienda';
-import { AdminHomePage } from '../pages/admin-home/admin-home'
+import { AdminHomePage } from '../pages/admin-home/admin-home';
+import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AdminHomePage } from '../pages/admin-home/admin-home'
     HomeWorkPage,
     ProdottiPage,
     HomeAziendaPage,
-    AdminHomePage
+    AdminHomePage,
+    PuntiRitiroPage
     
   ],
   imports: [
@@ -36,7 +38,8 @@ import { AdminHomePage } from '../pages/admin-home/admin-home'
     HomeWorkPage,
     ProdottiPage,
     HomeAziendaPage,
-    AdminHomePage
+    AdminHomePage,
+    PuntiRitiroPage
   ],
   providers: [
     StatusBar,

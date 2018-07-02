@@ -56,24 +56,23 @@ app.get('/prodotti', function (req, res) {
 app.post('/modIdoneo', function(req, res){
         //JSON.parse(res.body);
         console.log(req.body);
-        let sql ='UPDATE PRODOTTI SET IDONEO = "SI" WHERE CODICE = ?';
-        let db =  new sqlite3.Database(database);
         let codice =[];
         
         for(c in req.body){
         codice.push(req.body[c]);
         console.log(codice);
-        db.run(sql,codice, function(err){
+        sqlite.IdoneoSN(codice);
+        }
+       /*  db.run(sql,codice, function(err){
         if (err) {
             console.error(err.message);
             }
         console.log('Cambiamenti effettuati');
 
         });}
-        db.close();
-  
-
-});
+        db.close(); */
+      
+  });
 //Inizializza il server
 app.listen(8080, function() {
     console.log('listening on 8080');
