@@ -10,6 +10,8 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { Camera } from '@ionic-native/camera';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { ProdottiPage } from '../pages/prodotti/prodotti';
+import { HomeAziendaPage } from '../pages/home-azienda/home-azienda';
+import { AdminHomePage } from '../pages/admin-home/admin-home'
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ProdottiPage } from '../pages/prodotti/prodotti';
     LoginPage,
     HomeWorkPage,
     ProdottiPage,
+    HomeAziendaPage,
+    AdminHomePage
     
   ],
   imports: [
@@ -31,6 +35,8 @@ import { ProdottiPage } from '../pages/prodotti/prodotti';
     LoginPage,
     HomeWorkPage,
     ProdottiPage,
+    HomeAziendaPage,
+    AdminHomePage
   ],
   providers: [
     StatusBar,

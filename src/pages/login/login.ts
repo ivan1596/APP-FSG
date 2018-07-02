@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomeWorkPage } from '../home-work/home-work';
-import { ProdottiPage } from '../prodotti/prodotti';
+import { HomeAziendaPage } from '../home-azienda/home-azienda';
+import { AdminHomePage } from '../admin-home/admin-home'
+
+
 //import { NgModel } from '@angular/forms';
 
 
@@ -23,9 +26,9 @@ export class LoginPage {
   }
 
   goToHome(){
-    const admin_user = {
-      user:"admin",
-      password: "admin"
+    const impiegato_user = {
+      user:"impiegato",
+      password: "impiegato"
     };
 
     const azienda_user = {
@@ -33,15 +36,25 @@ export class LoginPage {
       password: "azienda"
     };
 
+    const admin_user = {
+      user:"admin",
+      password: "admin"
+    };
+
+
+
     var user= this.username;
     var psw = this.password;
   
      switch(user && psw){
-        case  admin_user.user && admin_user.password:
+        case  impiegato_user.user && impiegato_user.password:
           this.navCtrl.push(HomeWorkPage);
           break;
         case azienda_user.user && azienda_user.password:
-          this.navCtrl.push(ProdottiPage);
+          this.navCtrl.push(HomeAziendaPage);
+          break;
+        case admin_user.user && admin_user.password:
+          this.navCtrl.push(AdminHomePage);
           break;
         default: 
           /*this.navCtrl.push(LoginPage); */
