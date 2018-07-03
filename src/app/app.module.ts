@@ -14,6 +14,7 @@ import { HomeAziendaPage } from '../pages/home-azienda/home-azienda';
 import { AdminHomePage } from '../pages/admin-home/admin-home';
 import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro';
 import {ProdottiIdoneiPage} from '../pages/prodotti-idonei/prodotti-idonei';
+import {AddRitiroPage} from '../pages/add-ritiro/add-ritiro';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {ProdottiIdoneiPage} from '../pages/prodotti-idonei/prodotti-idonei';
     AdminHomePage,
     PuntiRitiroPage,
     ProdottiIdoneiPage,
+    AddRitiroPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import {ProdottiIdoneiPage} from '../pages/prodotti-idonei/prodotti-idonei';
     HomeAziendaPage,
     AdminHomePage,
     PuntiRitiroPage,
-    ProdottiIdoneiPage
+    ProdottiIdoneiPage,
+    AddRitiroPage
 
   ],
   providers: [

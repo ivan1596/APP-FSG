@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const database = './Prodotti.db';
+const database = './FSG-APP.db';
 
 
      
@@ -8,7 +8,7 @@ module.exports = {
 
     IdoneoSN : function (codice){
         
-        let sql ='UPDATE PRODOTTI SET IDONEO = "SI" WHERE CODICE = ?';
+        let sql ='UPDATE REGISTRO SET IDONEO = "SI" WHERE CODICE = ?';
         let db =  new sqlite3.Database(database);
         db.run(sql,codice, function(err){
         if (err) {
@@ -27,7 +27,7 @@ module.exports = {
         var Prodotti = []
 
 
-        let sql = `SELECT * FROM PRODOTTI`;
+        let sql = `SELECT * FROM REGISTRO`;
 
         db.all(sql, [], (err, rows) => {
             if (err) {
@@ -59,7 +59,7 @@ module.exports = {
         var Prodotti = []
 
 
-        let sql = `SELECT * FROM PRODOTTI WHERE IDONEO = "SI"`;
+        let sql = `SELECT * FROM REGISTRO WHERE IDONEO = "SI"`;
 
         db.all(sql, [], (err, rows) => {
             if (err) {

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProdottiPage } from '../prodotti/prodotti';
+import { AddRitiroPage } from '../add-ritiro/add-ritiro';
 
 
 
@@ -16,6 +17,10 @@ export class HomeAziendaPage {
 
   goToProdotti(){
     this.navCtrl.push(ProdottiPage);
+  }
+
+  goToPuntiRitiro(){
+    this.navCtrl.push(AddRitiroPage);
   }
 
   ionViewDidLoad() {
