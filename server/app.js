@@ -6,8 +6,6 @@ var logger = require('morgan');
 var methodOverride = require('method-override')
 var cors = require('cors');
 var sqlite = require("./module/sqlite.js");
-const sqlite3 = require('sqlite3').verbose();
-const database = './Prodotti.db';
 const app = express();
 app.use(logger('dev'));
 
@@ -73,6 +71,26 @@ app.post('/modIdoneo', function(req, res){
         db.close(); */
       
   });
+
+  app.get('/prodottiIdonei', function (req, res) {
+    sqlite.getProdottiIdonei(function (Prodotti){
+      var prodotti ={};
+      
+      var productList={};
+      prodotti.Prodotti =Prodotti;
+      var stringProdotti=JSON.stringify(prodotti);// prodotto stringato del db da parsare 
+      //parso il risultato del db
+      var allProductJsonParsed= JSON.parse(stringProdotti);
+      var obj = allProductJsonParsed;
+      productList=allProductJsonParsed;
+     
+      var prodottiList=JSON.stringify(obj);
+      res.json(productList);
+      console.log("res /prodotti inviata");
+    })
+  });
+
+
 //Inizializza il server
 app.listen(8080, function() {
     console.log('listening on 8080');

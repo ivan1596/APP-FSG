@@ -12,7 +12,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { ProdottiPage } from '../pages/prodotti/prodotti';
 import { HomeAziendaPage } from '../pages/home-azienda/home-azienda';
 import { AdminHomePage } from '../pages/admin-home/admin-home';
-import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro'
+import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro';
+import {ProdottiIdoneiPage} from '../pages/prodotti-idonei/prodotti-idonei';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,8 @@ import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro'
     ProdottiPage,
     HomeAziendaPage,
     AdminHomePage,
-    PuntiRitiroPage
-    
+    PuntiRitiroPage,
+    ProdottiIdoneiPage,
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,9 @@ import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro'
     ProdottiPage,
     HomeAziendaPage,
     AdminHomePage,
-    PuntiRitiroPage
+    PuntiRitiroPage,
+    ProdottiIdoneiPage
+
   ],
   providers: [
     StatusBar,

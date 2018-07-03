@@ -51,5 +51,39 @@ module.exports = {
 
         db.close();
 
+    },
+
+    getProdottiIdonei: function (callback) {
+        let db = new sqlite3.Database(database);
+
+        var Prodotti = []
+
+
+        let sql = `SELECT * FROM PRODOTTI WHERE IDONEO = "SI"`;
+
+        db.all(sql, [], (err, rows) => {
+            if (err) {
+                throw err;
+            }
+            rows.forEach((row) => {
+                
+                var prodotto = {};
+                prodotto.codice=row.Codice;
+                prodotto.nome = row.Nome;
+                prodotto.datascadenza = row.DataScadenza;
+                prodotto.idoneo= row.Idoneo
+                
+                Prodotti.push(prodotto)
+                
+            });
+            //call the callback
+            callback(Prodotti)
+
+        });
+
+        db.close();
+
     }
+
+
 }
