@@ -17,12 +17,15 @@ export class ProdottiPage {
   }
   prodottiAssortiti=[];
   visualizzaProdotti=[];
+  prodottiIdonei=[];
   CodProdottiIdonei=[];
   inviaProd(){
     console.log("Hai inviato i prodotti selezionati come idonei al server");
   }
-  InserisciProdottiIdonei(CodIdo:any){
+  InserisciProdottiIdonei(CodIdo:any,prodottoIdo:any){
     console.log("Hai inserito ",CodIdo,"indicandolo come prodotto idoneo");
+    console.log("Hai inserito il prodotto", + prodottoIdo,"indicandolo come idoneo");
+    this.prodottiIdonei.push(prodottoIdo);
     this.CodProdottiIdonei.push(CodIdo);
     JSON.stringify(this.CodProdottiIdonei);
     this.http.post('http://localhost:8080/modIdoneo',this.CodProdottiIdonei ).pipe(

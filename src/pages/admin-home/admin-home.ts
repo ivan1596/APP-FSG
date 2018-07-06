@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PuntiRitiroPage } from '../punti-ritiro/punti-ritiro';
 import {ProdottiIdoneiPage} from '../prodotti-idonei/prodotti-idonei';
+import {ProdottiPage} from '../prodotti/prodotti';
 
 /**
  * Generated class for the AdminHomePage page.
@@ -25,6 +26,9 @@ export class AdminHomePage {
   }
 
   goToProdottiPortale(){
+    this.navCtrl.push(ProdottiIdoneiPage);
+  }
+  goToProdottiIdonei(){
     this.navCtrl.push(ProdottiIdoneiPage);
   }
 
