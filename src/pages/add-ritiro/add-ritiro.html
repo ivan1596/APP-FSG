@@ -19,20 +19,21 @@
 <ion-list>
 
     <ion-item>
-      <ion-label fixed>Città</ion-label>
-      <ion-input type="text" value=""></ion-input>
+      <ion-label floating>Città</ion-label>
+      <ion-input  #citta></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-label fixed>Via</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label floating>Via</ion-label>
+      <ion-input  #Via></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-label fixed>CAP</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-label floating>CAP</ion-label>
+        <ion-input  #CAP></ion-input>
     </ion-item>
   
   </ion-list>
-  <button ion-button full >Inserisci Punto Ritiro</button>
+  <button ion-button full (click)="inserisciPuntiRitiro(citta.value,Via.value,CAP.value)" >Inserisci Punto Ritiro</button>
+
 </ion-content>

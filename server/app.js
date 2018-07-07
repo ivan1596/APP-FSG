@@ -93,11 +93,20 @@ console.log('req.body= ',req.body);
 var parsedInsert=JSON.parse(req.body);
 var nome = parsedInsert.nomeProdotto;
 var codice = parsedInsert.codiceProdotto;
-console.log("var codice",codice);
 var dataScadenza= parsedInsert.dataScadenza;
 sqlite.inserisciProdotti(nome,codice,dataScadenza);
 });
 
+app.post('/inserisciPuntiRitiro',function(req,res){
+  console.log('req.body= ',req.body);
+  var parsedInsert=JSON.parse(req.body);
+  var Via = parsedInsert.Via;
+  var città = parsedInsert.città;
+  var CAP= parsedInsert.CAP;
+  sqlite.inserisciPuntiRitiro(città,Via,CAP);
+  });
+
+  
 //Inizializza il server
 app.listen(8080, function() {
     console.log('listening on 8080');
