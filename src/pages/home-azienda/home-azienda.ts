@@ -11,8 +11,9 @@ import { AddRitiroPage } from '../add-ritiro/add-ritiro';
   templateUrl: 'home-azienda.html',
 })
 export class HomeAziendaPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams) { 
+   
   }
 
   goToProdotti(){

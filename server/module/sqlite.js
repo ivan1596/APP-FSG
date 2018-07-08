@@ -7,7 +7,7 @@ const database = './FSG-APP.db';
 module.exports = {
 
     IdoneoSN : function (codice){
-        
+        console.log("codice: ",codice);   
         let sql ='UPDATE REGISTRO SET IDONEO = "SI" WHERE CODICE = ?';
         let db =  new sqlite3.Database(database);
         db.run(sql,codice, function(err){
@@ -81,9 +81,35 @@ module.exports = {
 
         });
 
+
         db.close();
 
-    }
+    },
+    inserisciProdotti: function (nome,CodiceProdotto,dataScadenza) {
+        let db = new sqlite3.Database(database);
+        let sql = `INSERT INTO REGISTRO (Codice,DataScadenza,Nome)  
+        VALUES (?,?,?)`;
+        db.run(sql,CodiceProdotto,dataScadenza,nome, function(err){
+            if (err) {
+                console.error(err.message);
+                }
+            console.log('Hai immesso correttamente il prodotto nel db!');
+    
+            });
+      
+},
+inserisciPuntiRitiro: function (città,Via,CAP) {
+    let db = new sqlite3.Database(database);
+    let sql = `INSERT INTO PUNTORITIRO (città,Via,CAP)  
+    VALUES (?,?,?)`;
+    db.run(sql,città,Via,CAP, function(err){
+        if (err) {
+            console.error(err.message);
+            }
+        console.log('Hai immesso correttamente nel db il tuo punto di ritiro!');
 
+        });
+  
+}
 
 }

@@ -75,7 +75,6 @@ app.post('/modIdoneo', function(req, res){
   app.get('/prodottiIdonei', function (req, res) {
     sqlite.getProdottiIdonei(function (Prodotti){
       var prodotti ={};
-      
       var productList={};
       prodotti.Prodotti =Prodotti;
       var stringProdotti=JSON.stringify(prodotti);// prodotto stringato del db da parsare 
@@ -83,14 +82,31 @@ app.post('/modIdoneo', function(req, res){
       var allProductJsonParsed= JSON.parse(stringProdotti);
       var obj = allProductJsonParsed;
       productList=allProductJsonParsed;
-     
       var prodottiList=JSON.stringify(obj);
       res.json(productList);
       console.log("res /prodotti inviata");
     })
   });
 
+app.post('/inserisciProdotti',function(req,res){
+console.log('req.body= ',req.body);
+var parsedInsert=JSON.parse(req.body);
+var nome = parsedInsert.nomeProdotto;
+var codice = parsedInsert.codiceProdotto;
+var dataScadenza= parsedInsert.dataScadenza;
+sqlite.inserisciProdotti(nome,codice,dataScadenza);
+});
 
+app.post('/inserisciPuntiRitiro',function(req,res){
+  console.log('req.body= ',req.body);
+  var parsedInsert=JSON.parse(req.body);
+  var Via = parsedInsert.Via;
+  var città = parsedInsert.città;
+  var CAP= parsedInsert.CAP;
+  sqlite.inserisciPuntiRitiro(città,Via,CAP);
+  });
+
+  
 //Inizializza il server
 app.listen(8080, function() {
     console.log('listening on 8080');

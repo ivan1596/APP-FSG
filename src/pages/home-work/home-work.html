@@ -18,22 +18,25 @@
      <!-- <form (ngSubmit)="productForm()">-->
         <ion-item>
           <ion-label floating>Nome Prodotto</ion-label>
-          <ion-input type="text" ></ion-input>
+          <!--<ion-input type="text" [(ngModel)]=“data.username”></ion-input>-->
+          <ion-input  #nomeProdotto></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label floating>Codice</ion-label>
-          <ion-input type="text" value="{{codice}}"></ion-input>
+         <!-- <ion-input type="text" value="{{codice}}" [(ngModel)]=“data.codice”></ion-input>-->
+         <ion-input  #codiceProdotto></ion-input>
         </ion-item>
         
         <ion-item>
             <ion-label floating>Data Scadenza</ion-label>
-            <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+            <ion-datetime displayFormat="DD/MM/YYYY" #myDate></ion-datetime>
+            
         </ion-item>
        
        
       <!--</form>-->
-        <button ion-button full (click)="aggiungi()">AGGIUNGI PRODOTTO</button>
+        <button ion-button full (click)="inserisciProdotto(nomeProdotto.value,codiceProdotto.value,myDate.value)">AGGIUNGI PRODOTTO</button>
         <button ion-button full (click)="scansiona()">SCANSIONA PRODOTTO</button>
       
       </ion-list>
