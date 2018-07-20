@@ -96,9 +96,10 @@ module.exports = {
             console.log('Hai immesso correttamente il prodotto nel db!');
     
             });
+        db.close();
       
 },
-inserisciPuntiRitiro: function (città,Via,CAP) {
+    inserisciPuntiRitiro: function (città,Via,CAP) {
     let db = new sqlite3.Database(database);
     let sql = `INSERT INTO PUNTORITIRO (città,Via,CAP)  
     VALUES (?,?,?)`;
@@ -109,7 +110,54 @@ inserisciPuntiRitiro: function (città,Via,CAP) {
         console.log('Hai immesso correttamente nel db il tuo punto di ritiro!');
 
         });
+        db.close();
   
-}
+}, 
+    addCatalogo: function(){
+        let db = new sqlite3.Database(database);
+        let sql1 = 'INSERT INTO CATALOGO SELECT Codice,DataScadenza,Nome FROM REGISTRO WHERE IDONEO = "SI"';
+       
+        db.run(sql1,function(err){
+            if(err){
+                console.error(err.message);
+
+            }
+            console.log('Catalogo Aggiornato');
+        });
+        db.close();
+
+    },
+
+    getCatalogo : function(callback){
+        let db = new sqlite3.Database(database);
+
+        var Prodotti = []
+
+
+        let sql = `SELECT * FROM CATALOGO`;
+
+        db.all(sql, [], (err, rows) => {
+            if (err) {
+                throw err;
+            }
+            rows.forEach((row) => {
+                
+                var prodotto = {};
+                prodotto.codice=row.Codice;
+                prodotto.nome = row.Nome;
+                prodotto.datascadenza = row.DataScadenza;
+                prodotto.idoneo= row.Idoneo
+                
+                Prodotti.push(prodotto)
+                
+            });
+            //call the callback
+            callback(Prodotti)
+
+        });
+
+        db.close();
+
+    }
 
 }

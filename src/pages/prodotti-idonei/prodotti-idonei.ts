@@ -19,6 +19,15 @@ export class ProdottiIdoneiPage {
   prodottiAssortiti=[];
   visualizzaProdotti=[];
 
+  addCat(){
+    this.http.get('http://localhost:8080/addCatalogo' ).pipe(
+        map(res => res.json())
+      ).subscribe(response => {
+        console.log('Catalogo Aggiornato');
+      
+    });
+  }
+
   ionViewDidLoad() {
     this.http.get('http://localhost:8080/prodottiIdonei' ).pipe(
         map(res => res.json())

@@ -31,9 +31,6 @@ app.use(function(req, res, next) {
 app.get('/prodotti', function (req, res) {
   sqlite.getProdotti(function (Prodotti){
     var prodotti ={};
-    var Arraynomi= {};
-    var ArrayCodice={};
-    var ArrayScadenza={};
     var productList={};
     prodotti.Prodotti =Prodotti;
     //res.json(JSON.stringify(prodotti.Prodotti));// cancella questo commento per inviare come risposta json stringiflati del db
@@ -50,7 +47,22 @@ app.get('/prodotti', function (req, res) {
   })
 });
 
-
+app.get('/getCatalogo',function(req,res){
+    //sqlite.addCatalogo();
+    sqlite.getCatalogo(function(Prodotti){
+    var prodotti ={};
+    var productList={};
+    prodotti.Prodotti =Prodotti;
+    var stringProdotti=JSON.stringify(prodotti);
+    var allProductJsonParsed= JSON.parse(stringProdotti);
+    var obj = allProductJsonParsed;
+    productList=allProductJsonParsed;
+    var prodottiList=JSON.stringify(obj);
+    res.json(productList);
+    console.log("res /prodotti inviata");
+    
+    })
+});
 app.post('/modIdoneo', function(req, res){
         //JSON.parse(res.body);
         console.log(req.body);
@@ -105,6 +117,13 @@ app.post('/inserisciPuntiRitiro',function(req,res){
   var CAP= parsedInsert.CAP;
   sqlite.inserisciPuntiRitiro(città,Via,CAP);
   });
+
+app.get('/addCatalogo', function(req,res){
+  sqlite.addCatalogo();
+  console.log('Catalogo Aggiornato');
+});
+
+
 
   
 //Inizializza il server

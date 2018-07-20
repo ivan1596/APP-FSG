@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomeWorkPage } from '../home-work/home-work';
 import { HomeAziendaPage } from '../home-azienda/home-azienda';
 import { AdminHomePage } from '../admin-home/admin-home'
+import { HomeUtentePage } from '../home-utente/home-utente';
 
 
 //import { NgModel } from '@angular/forms';
@@ -41,6 +42,13 @@ export class LoginPage {
       password: "admin"
     };
 
+    const utente_user = {
+      user:"utente",
+      password: "utente"
+    };
+
+
+
 
 
     var user= this.username;
@@ -56,6 +64,10 @@ export class LoginPage {
         case admin_user.user && admin_user.password:
           this.navCtrl.push(AdminHomePage);
           break;
+        case utente_user.user && utente_user.password:
+          this.navCtrl.push(HomeUtentePage);
+          break;
+        
         default: 
           /*this.navCtrl.push(LoginPage); */
           break;

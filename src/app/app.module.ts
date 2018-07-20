@@ -15,6 +15,8 @@ import { AdminHomePage } from '../pages/admin-home/admin-home';
 import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro';
 import {ProdottiIdoneiPage} from '../pages/prodotti-idonei/prodotti-idonei';
 import {AddRitiroPage} from '../pages/add-ritiro/add-ritiro';
+import {HomeUtentePage} from '../pages/home-utente/home-utente';
+import {CatalogoPage} from '../pages/catalogo/catalogo';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {AddRitiroPage} from '../pages/add-ritiro/add-ritiro';
     AdminHomePage,
     PuntiRitiroPage,
     ProdottiIdoneiPage,
-    AddRitiroPage
+    AddRitiroPage,
+    HomeUtentePage,
+    CatalogoPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import {AddRitiroPage} from '../pages/add-ritiro/add-ritiro';
     AdminHomePage,
     PuntiRitiroPage,
     ProdottiIdoneiPage,
-    AddRitiroPage
+    AddRitiroPage,
+    HomeUtentePage,
+    CatalogoPage
 
   ],
   providers: [
