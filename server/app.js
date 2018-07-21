@@ -59,10 +59,12 @@ app.get('/getCatalogo',function(req,res){
     productList=allProductJsonParsed;
     var prodottiList=JSON.stringify(obj);
     res.json(productList);
-    console.log("res /prodotti inviata");
+    console.log("res /getCatalogo OK");
     
     })
 });
+
+
 app.post('/modIdoneo', function(req, res){
         //JSON.parse(res.body);
         console.log(req.body);
@@ -99,6 +101,26 @@ app.post('/modIdoneo', function(req, res){
       console.log("res /prodotti inviata");
     })
   });
+  app.get('/getPuntiRitiro',function(req,res){
+console.log("getPuntiRitiro");
+sqlite.getPuntiRitiro(function(PuntiRitiro){
+    var prodotti ={};
+    var productList={};
+    prodotti.Prodotti =PuntiRitiro;
+    var stringProdotti=JSON.stringify(prodotti);
+    var allProductJsonParsed= JSON.parse(stringProdotti);
+    var obj = allProductJsonParsed;
+    productList=allProductJsonParsed;
+    var prodottiList=JSON.stringify(obj);
+    for(var x in productList.Prodotti){
+      console.log("il punto di ritiro nell'indice",x+"è: ",productList.Prodotti[x]);
+    }
+    res.json(productList);
+
+
+});
+});
+
 
 app.post('/inserisciProdotti',function(req,res){
 console.log('req.body= ',req.body);
@@ -122,7 +144,6 @@ app.get('/addCatalogo', function(req,res){
   sqlite.addCatalogo();
   console.log('Catalogo Aggiornato');
 });
-
 
 
   

@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ConfermaOrdinePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>confermaOrdine</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+  <label></label>
+ <ion-card>
+  <ion-card-header>
+   <b>Città punto ritiro scelto : {{nomePuntoRitiro}}</b>
+  </ion-card-header>
+  <ion-card-content>
+   <b>Via: </b><p>{{viaPuntoRitiro}}</p>
+  <b>Cap: </b> <p>{{capPuntoRitiro}}</p>
+  </ion-card-content>
+
+</ion-card> 
+<ion-list >
+        <ion-item *ngFor="let visualizzaProdottiOrdinati of prodottiOrdinati">
+          <ion-card>
+            <ion-card-header>
+             <b>Hai ordinato questo prodotto:{{visualizzaProdottiOrdinati.nome}}</b>
+            </ion-card-header>
+            <ion-card-content>
+               <b>DataScadenza: </b><p>{{visualizzaProdottiOrdinati.datascadenza}}</p>
+               <b>CodiceProdotto: </b> <p>{{visualizzaProdottiOrdinati.codice}}</p>
+            </ion-card-content>
+          </ion-card> 
+        </ion-item>
+       </ion-list>
+     <button ion-button full color="light" (click)=" showAlert()">Conferma Ordine</button>  
+</ion-content>
