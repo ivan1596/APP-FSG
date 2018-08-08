@@ -158,6 +158,28 @@ module.exports = {
 
         db.close();
 
+    },
+    getPuntiRitiro: function(callback){
+         let db = new sqlite3.Database(database);
+         var PuntiRitiro=[];
+         let sql = `SELECT * FROM PUNTORITIRO`;
+         db.all(sql, [], (err, rows) => {
+            if (err) {
+                throw err;
+            }
+            rows.forEach((row) => {
+                
+                var puntoRitiro = {};
+                puntoRitiro.Città=row.Città;
+                puntoRitiro.Via = row.Via;
+                puntoRitiro.Cap = row.Cap;                
+                PuntiRitiro.push(puntoRitiro)
+                
+            });
+            //call the callback
+            callback(PuntiRitiro)
+     });
+     db.close();
     }
 
 }

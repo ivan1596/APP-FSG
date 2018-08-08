@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OrdinaProdottiPage } from '../ordina-prodotti/ordina-prodotti';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Http } from '@angular/http';
 import { map } from 'rxjs/operators';
@@ -20,7 +21,20 @@ export class CatalogoPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,public http: Http) {
   }
   visualizzaProdotti=[];
-
+  prodottiOrdinati=[];
+  scegliPuntiRitiro(){
+    console.log("vado alla pagina che mostra i punti di ritiro per i prodotti");
+     this.navCtrl.push(OrdinaProdottiPage,{
+      data:this.prodottiOrdinati 
+    });
+  }
+  inserisciProdottiOrdinati(Prodotto:any){
+    console.log("prodotto che arriva da catalogo html,"+Prodotto.nome,Prodotto.datascadenza,Prodotto.codice);
+   this.prodottiOrdinati.push(Prodotto);
+    for(var x in this.prodottiOrdinati){
+      console.log("Oggetto nell indice: ",x + " ",this.prodottiOrdinati[x]);
+    } 
+  }
   ionViewDidLoad() {
     this.http.get('http://localhost:8080/getCatalogo' ).pipe(
       map(res => res.json())

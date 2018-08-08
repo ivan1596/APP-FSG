@@ -17,6 +17,8 @@ import {ProdottiIdoneiPage} from '../pages/prodotti-idonei/prodotti-idonei';
 import {AddRitiroPage} from '../pages/add-ritiro/add-ritiro';
 import {HomeUtentePage} from '../pages/home-utente/home-utente';
 import {CatalogoPage} from '../pages/catalogo/catalogo';
+import {OrdinaProdottiPage } from '../pages/ordina-prodotti/ordina-prodotti';
+import {ConfermaOrdinePage } from '../pages/conferma-ordine/conferma-ordine';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {CatalogoPage} from '../pages/catalogo/catalogo';
     ProdottiIdoneiPage,
     AddRitiroPage,
     HomeUtentePage,
-    CatalogoPage
+    CatalogoPage,
+    OrdinaProdottiPage,
+    ConfermaOrdinePage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ import {CatalogoPage} from '../pages/catalogo/catalogo';
     ProdottiIdoneiPage,
     AddRitiroPage,
     HomeUtentePage,
-    CatalogoPage
+    CatalogoPage,
+    OrdinaProdottiPage,
+    ConfermaOrdinePage
 
   ],
   providers: [

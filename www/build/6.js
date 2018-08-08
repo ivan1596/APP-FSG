@@ -1,14 +1,14 @@
 webpackJsonp([6],{
 
-/***/ 409:
+/***/ 413:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeAziendaPageModule", function() { return HomeAziendaPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeUtentePageModule", function() { return HomeUtentePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_azienda__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_utente__ = __webpack_require__(134);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HomeAziendaPageModule = /** @class */ (function () {
-    function HomeAziendaPageModule() {
+var HomeUtentePageModule = /** @class */ (function () {
+    function HomeUtentePageModule() {
     }
-    HomeAziendaPageModule = __decorate([
+    HomeUtentePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__home_azienda__["a" /* HomeAziendaPage */],
+                __WEBPACK_IMPORTED_MODULE_2__home_utente__["a" /* HomeUtentePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__home_azienda__["a" /* HomeAziendaPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__home_utente__["a" /* HomeUtentePage */]),
             ],
         })
-    ], HomeAziendaPageModule);
-    return HomeAziendaPageModule;
+    ], HomeUtentePageModule);
+    return HomeUtentePageModule;
 }());
 
-//# sourceMappingURL=home-azienda.module.js.map
+//# sourceMappingURL=home-utente.module.js.map
 
 /***/ })
 

@@ -1,4 +1,4 @@
-webpackJsonp([10],{
+webpackJsonp([12],{
 
 /***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6,8 +6,8 @@ webpackJsonp([10],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddRitiroPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(42);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,9 +58,9 @@ var AddRitiroPage = /** @class */ (function () {
     };
     AddRitiroPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-add-ritiro',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/'<!--\n\n  Generated template for the AddRitiroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AddRitiro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content padding>\n\n<h1>Aggiungi un punto di ritiro</h1>\n\n<ion-list>\n\n\n\n    <ion-item>\n\n      <ion-label floating>Città</ion-label>\n\n      <ion-input  #citta></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-label floating>Via</ion-label>\n\n      <ion-input  #Via></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label floating>CAP</ion-label>\n\n        <ion-input  #CAP></ion-input>\n\n    </ion-item>\n\n  \n\n  </ion-list>\n\n  <button ion-button full (click)="inserisciPuntiRitiro(citta.value,Via.value,CAP.value)" >Inserisci Punto Ritiro</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/,
+            selector: 'page-add-ritiro',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/'<!--\n\n  Generated template for the AddRitiroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AddRitiro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content padding>\n\n<h1>Aggiungi un punto di ritiro</h1>\n\n<ion-list>\n\n\n\n    <ion-item>\n\n      <ion-label floating>Città</ion-label>\n\n      <ion-input  #citta></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-label floating>Via</ion-label>\n\n      <ion-input  #Via></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label floating>CAP</ion-label>\n\n        <ion-input  #CAP></ion-input>\n\n    </ion-item>\n\n  \n\n  </ion-list>\n\n  <button ion-button full (click)="inserisciPuntiRitiro(citta.value,Via.value,CAP.value)" >Inserisci Punto Ritiro</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
     ], AddRitiroPage);
     return AddRitiroPage;
 }());
@@ -75,7 +75,7 @@ var AddRitiroPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminHomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__punti_ritiro_punti_ritiro__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prodotti_idonei_prodotti_idonei__ = __webpack_require__(128);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -116,9 +116,9 @@ var AdminHomePage = /** @class */ (function () {
     };
     AdminHomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-admin-home',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\admin-home\admin-home.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>AdminHome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>\n    Benvenuto nell\'interfaccia gestionale dell\'amministratore del portale\n  </h2>\n\n  <button ion-button full (click)="goToProdottiPortale()">Visualizza i prodotti del Portale</button>\n  <button ion-button full  (click)="goToPuntiRitiroPortale()">Inserisci punti di ritiro nel Portale</button>\n  <button ion-button full  (click)="goToVerificaUtenti()">Verifica Utenti</button>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\admin-home\admin-home.html"*/,
+            selector: 'page-admin-home',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\admin-home\admin-home.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AdminHome</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <h2>\n\n    Benvenuto nell\'interfaccia gestionale dell\'amministratore del portale\n\n  </h2>\n\n\n\n  <button ion-button full (click)="goToProdottiPortale()">Visualizza i prodotti del Portale</button>\n\n  <button ion-button full  (click)="goToPuntiRitiroPortale()">Inserisci punti di ritiro nel Portale</button>\n\n  <button ion-button full  (click)="goToVerificaUtenti()">Verifica Utenti</button>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\admin-home\admin-home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], AdminHomePage);
     return AdminHomePage;
 }());
@@ -133,7 +133,7 @@ var AdminHomePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PuntiRitiroPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -161,9 +161,9 @@ var PuntiRitiroPage = /** @class */ (function () {
     };
     PuntiRitiroPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-punti-ritiro',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\punti-ritiro\punti-ritiro.html"*/'<!--\n  Generated template for the PuntiRitiroPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>PuntiRitiro</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\punti-ritiro\punti-ritiro.html"*/,
+            selector: 'page-punti-ritiro',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\punti-ritiro\punti-ritiro.html"*/'<!--\n\n  Generated template for the PuntiRitiroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>PuntiRitiro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\punti-ritiro\punti-ritiro.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], PuntiRitiroPage);
     return PuntiRitiroPage;
 }());
@@ -178,9 +178,9 @@ var PuntiRitiroPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProdottiIdoneiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -219,9 +219,9 @@ var ProdottiIdoneiPage = /** @class */ (function () {
     };
     ProdottiIdoneiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-prodotti-idonei',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/'<!--\n  Generated template for the ProdottiIdoneiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ProdottiIdonei</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list >\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n          <ion-card>\n             \n            <ion-card-header>\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n            </ion-card-header>\n            <ion-card-content>\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n               <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n               <ion-item>\n                   <ion-radio  value="Idoneo" (click)="InserisciProdottiIdonei(visualizzaProdottiCompleti.codice)"></ion-radio>\n                </ion-item>\n            </ion-card-content>\n         \n          </ion-card>\n        \n        </ion-item>\n       </ion-list>\n       <button ion-button (click)="addCat()">Aggiungi Al Catalogo</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/,
+            selector: 'page-prodotti-idonei',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/'<!--\n\n  Generated template for the ProdottiIdoneiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>ProdottiIdonei</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n          <ion-card>\n\n             \n\n            <ion-card-header>\n\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n               <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n               <ion-item>\n\n                   <ion-radio  value="Idoneo" (click)="InserisciProdottiIdonei(visualizzaProdottiCompleti.codice)"></ion-radio>\n\n                </ion-item>\n\n            </ion-card-content>\n\n         \n\n          </ion-card>\n\n        \n\n        </ion-item>\n\n       </ion-list>\n\n       <button ion-button (click)="addCat()">Aggiungi Al Catalogo</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
     ], ProdottiIdoneiPage);
     return ProdottiIdoneiPage;
 }());
@@ -236,10 +236,11 @@ var ProdottiIdoneiPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CatalogoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ordina_prodotti_ordina_prodotti__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -249,6 +250,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -265,10 +267,24 @@ var CatalogoPage = /** @class */ (function () {
         this.navParams = navParams;
         this.http = http;
         this.visualizzaProdotti = [];
+        this.prodottiOrdinati = [];
     }
+    CatalogoPage.prototype.scegliPuntiRitiro = function () {
+        console.log("vado alla pagina che mostra i punti di ritiro per i prodotti");
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_1__ordina_prodotti_ordina_prodotti__["a" /* OrdinaProdottiPage */], {
+            data: this.prodottiOrdinati
+        });
+    };
+    CatalogoPage.prototype.inserisciProdottiOrdinati = function (Prodotto) {
+        console.log("prodotto che arriva da catalogo html," + Prodotto.nome, Prodotto.datascadenza, Prodotto.codice);
+        this.prodottiOrdinati.push(Prodotto);
+        for (var x in this.prodottiOrdinati) {
+            console.log("Oggetto nell indice: ", x + " ", this.prodottiOrdinati[x]);
+        }
+    };
     CatalogoPage.prototype.ionViewDidLoad = function () {
         var _this = this;
-        this.http.get('http://localhost:8080/getCatalogo').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (productList) {
+        this.http.get('http://localhost:8080/getCatalogo').pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (productList) {
             for (var x in productList.Prodotti) {
                 _this.visualizzaProdotti[x] = productList.Prodotti[x];
                 console.log("Oggetto nell indice: ", x + " ", _this.visualizzaProdotti[x]);
@@ -277,9 +293,9 @@ var CatalogoPage = /** @class */ (function () {
     };
     CatalogoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-catalogo',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\catalogo\catalogo.html"*/'<!--\n  Generated template for the CatalogoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Catalogo</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list >\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n          <ion-card>\n             \n            <ion-card-header>\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n            </ion-card-header>\n            <ion-card-content>\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n            </ion-card-content>\n         \n          </ion-card>\n          <button ion-button>Oridna Prodotto</button>\n          \n        </ion-item>\n       </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\catalogo\catalogo.html"*/,
+            selector: 'page-catalogo',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\catalogo\catalogo.html"*/'<!--\n\n  Generated template for the CatalogoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Catalogo</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n          <ion-card>\n\n             \n\n            <ion-card-header>\n\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p>\n\n               <ion-item>\n\n                   <ion-radio  value="Ordina" (click)="inserisciProdottiOrdinati(visualizzaProdottiCompleti)"></ion-radio>\n\n                </ion-item>\n\n            </ion-card-content>\n\n         \n\n          </ion-card> \n\n        </ion-item>\n\n       </ion-list>\n\n <button ion-button full color="light" (click)="scegliPuntiRitiro()">Ordina Prodotto/i</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\catalogo\catalogo.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], CatalogoPage);
     return CatalogoPage;
 }());
@@ -292,10 +308,166 @@ var CatalogoPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrdinaProdottiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__conferma_ordine_conferma_ordine__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the OrdinaProdottiPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var OrdinaProdottiPage = /** @class */ (function () {
+    function OrdinaProdottiPage(navCtrl, navParams, http) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.http = http;
+        this.puntiRitiroList = [];
+        this.citta = [];
+        this.puntoritiroSelezionato = [];
+        this.prodottiOrdinati = navParams.get('data');
+        console.log("I prodotti ordinati sono: ", this.prodottiOrdinati);
+    }
+    OrdinaProdottiPage.prototype.inserisciProdottiOrdinati = function (puntoSelezionato) {
+        this.puntoritiroSelezionato.push(puntoSelezionato);
+        console.log("punto ritiro selezionato: ", this.puntoritiroSelezionato);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_1__conferma_ordine_conferma_ordine__["a" /* ConfermaOrdinePage */], {
+            data: this.puntoritiroSelezionato,
+            prodotti: this.prodottiOrdinati
+        });
+    };
+    OrdinaProdottiPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        console.log('ionViewDidLoad OrdinaProdottiPage');
+        this.http.get('http://localhost:8080/getPuntiRitiro').pipe(Object(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (productList) {
+            for (var x in productList.Prodotti) {
+                _this.puntiRitiroList[x] = productList.Prodotti[x];
+                _this.puntiRitiroList[x].citta = productList.Prodotti[x].Città;
+                console.log("x calue di citta;", _this.citta[x]);
+                console.log("aadakhjdhakj;", _this.puntiRitiroList[x].citta);
+                console.log("PuntoRitiro nell'indice :  ", x + " è: ", _this.puntiRitiroList[x]);
+            }
+        });
+    };
+    OrdinaProdottiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-ordina-prodotti',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\ordina-prodotti\ordina-prodotti.html"*/'<!--\n\n  Generated template for the OrdinaProdottiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Punti di ritiro: Scegli il tuo punto di ritiro!</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n<ion-list>\n\n  \n\n  <ion-item *ngFor="let visualizzaPuntiRitiro of puntiRitiroList;let visualizzaCitta of citta; let i = index;">\n\n         \n\n         <ion-card>\n\n           <ion-card-header>\n\n           \n\n            \n\n            <b>Città: {{ visualizzaPuntiRitiro.citta}} </b>\n\n           </ion-card-header>\n\n           <ion-card-content>\n\n              <b>Via: </b><p>{{ visualizzaPuntiRitiro.Via}}</p>\n\n              <b>Cap: </b> <p>{{ visualizzaPuntiRitiro.Cap}}</p> \n\n              <ion-item>\n\n                   <ion-radio  value="SelezionaPuntoritiro" (click)="inserisciProdottiOrdinati(visualizzaPuntiRitiro)"></ion-radio>\n\n               </ion-item> \n\n           </ion-card-content>\n\n        \n\n         </ion-card>\n\n       \n\n       </ion-item>\n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\ordina-prodotti\ordina-prodotti.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
+    ], OrdinaProdottiPage);
+    return OrdinaProdottiPage;
+}());
+
+//# sourceMappingURL=ordina-prodotti.js.map
+
+/***/ }),
+
+/***/ 131:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfermaOrdinePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_login__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the ConfermaOrdinePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ConfermaOrdinePage = /** @class */ (function () {
+    function ConfermaOrdinePage(alertCtrl, navCtrl, navParams) {
+        this.alertCtrl = alertCtrl;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.prodottiOrdinati = [];
+        this.prodotti = [];
+        this.puntoRitiro = navParams.get('data');
+        this.prodottiOrdinati = navParams.get('prodotti');
+        this.prodotti.push(this.prodottiOrdinati);
+        console.log("var nuova:", this.prodotti);
+        console.log("prodotti ordinati:", this.prodottiOrdinati);
+        console.log("pr conferma ordine", this.puntoRitiro);
+        this.nomePuntoRitiro = this.puntoRitiro[0].citta;
+        this.viaPuntoRitiro = this.puntoRitiro[0].Via;
+        this.capPuntoRitiro = this.puntoRitiro[0].Cap;
+    }
+    ConfermaOrdinePage.prototype.showAlert = function () {
+        var _this = this;
+        var alert = this.alertCtrl.create({
+            title: 'Ordine Confermato!',
+            subTitle: 'Grazie hai confermato l ordine!',
+            buttons: [
+                {
+                    text: 'Torna alla home',
+                    handler: function (data) {
+                        _this.backHome = true;
+                        console.log("backhome vale: ", _this.backHome);
+                        console.log('tonrA alla home clicked');
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_1__login_login__["a" /* LoginPage */]);
+                    }
+                },
+            ]
+        });
+        alert.present();
+    };
+    ConfermaOrdinePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ConfermaOrdinePage');
+    };
+    ConfermaOrdinePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-conferma-ordine',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\conferma-ordine\conferma-ordine.html"*/'<!--\n\n  Generated template for the ConfermaOrdinePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>confermaOrdine</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n  <label></label>\n\n <ion-card>\n\n  <ion-card-header>\n\n   <b>Città punto ritiro scelto : {{nomePuntoRitiro}}</b>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n   <b>Via: </b><p>{{viaPuntoRitiro}}</p>\n\n  <b>Cap: </b> <p>{{capPuntoRitiro}}</p>\n\n  </ion-card-content>\n\n\n\n</ion-card> \n\n<ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiOrdinati of prodottiOrdinati">\n\n          <ion-card>\n\n            <ion-card-header>\n\n             <b>Hai ordinato questo prodotto:{{visualizzaProdottiOrdinati.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{visualizzaProdottiOrdinati.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{visualizzaProdottiOrdinati.codice}}</p>\n\n            </ion-card-content>\n\n          </ion-card> \n\n        </ion-item>\n\n       </ion-list>\n\n     <button ion-button full color="light" (click)=" showAlert()">Conferma Ordine</button>  \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\conferma-ordine\conferma-ordine.html"*/,
+        }),
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */]) === "function" && _c || Object])
+    ], ConfermaOrdinePage);
+    return ConfermaOrdinePage;
+    var _a, _b, _c;
+}());
+
+//# sourceMappingURL=conferma-ordine.js.map
+
+/***/ }),
+
+/***/ 132:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeAziendaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_prodotti__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_prodotti__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_ritiro_add_ritiro__ = __webpack_require__(125);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -326,9 +498,9 @@ var HomeAziendaPage = /** @class */ (function () {
     };
     HomeAziendaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-azienda',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-azienda\home-azienda.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Home Azienda\n        </ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n    <h1>\n        Benvenuto nella home di gestione aziendale \n    </h1>\n\n    <button ion-button full (click)="goToProdotti()">Visualizza i prodotti</button>\n    <button ion-button full  (click)="goToPuntiRitiro()">Inserisci punti di ritiro</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-azienda\home-azienda.html"*/,
+            selector: 'page-home-azienda',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\home-azienda\home-azienda.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>\n\n            Home Azienda\n\n        </ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <h1>\n\n        Benvenuto nella home di gestione aziendale \n\n    </h1>\n\n\n\n    <button ion-button full (click)="goToProdotti()">Visualizza i prodotti</button>\n\n    <button ion-button full  (click)="goToPuntiRitiro()">Inserisci punti di ritiro</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\home-azienda\home-azienda.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], HomeAziendaPage);
     return HomeAziendaPage;
 }());
@@ -337,15 +509,15 @@ var HomeAziendaPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 131:
+/***/ 133:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProdottiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -402,9 +574,9 @@ var ProdottiPage = /** @class */ (function () {
     };
     ProdottiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-prodotti',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti\prodotti.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prodotti</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n      <ion-list >\n\n       <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n         <ion-card>\n\n            \n\n           <ion-card-header>\n\n            <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n           </ion-card-header>\n\n           <ion-card-content>\n\n              <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n              <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n              <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n              <ion-item>\n\n                  <ion-radio  value="Idoneo" (click)="InserisciProdottiIdonei(visualizzaProdottiCompleti.codice)"></ion-radio>\n\n               </ion-item>\n\n           </ion-card-content>\n\n        \n\n         </ion-card>\n\n       \n\n       </ion-item>\n\n      </ion-list>\n\n \n\n     <button ion-button full color="light" (click)="inviaProd()">Invia Prodotti Idonei</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti\prodotti.html"*/,
+            selector: 'page-prodotti',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\prodotti\prodotti.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prodotti</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n      <ion-list >\n\n       <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n         <ion-card>\n\n            \n\n           <ion-card-header>\n\n            <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n           </ion-card-header>\n\n           <ion-card-content>\n\n              <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n              <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n              <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n              <ion-item>\n\n                  <ion-radio  value="Idoneo" (click)="InserisciProdottiIdonei(visualizzaProdottiCompleti.codice)"></ion-radio>\n\n               </ion-item>\n\n           </ion-card-content>\n\n        \n\n         </ion-card>\n\n       \n\n       </ion-item>\n\n      </ion-list>\n\n \n\n     <button ion-button full color="light" (click)="inviaProd()">Invia Prodotti Idonei</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\prodotti\prodotti.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ToastController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]])
     ], ProdottiPage);
     return ProdottiPage;
 }());
@@ -413,13 +585,13 @@ var ProdottiPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 132:
+/***/ 134:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeUtentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__catalogo_catalogo__ = __webpack_require__(129);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -452,9 +624,9 @@ var HomeUtentePage = /** @class */ (function () {
     };
     HomeUtentePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-utente',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-utente\home-utente.html"*/'<!--\n  Generated template for the HomeUtentePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>HomeUtente</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>Benvenuto nella Home Utente</p>\n  <button ion-button full color="light" (click)="visCatalogo()">Sfoglia Catalogo</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-utente\home-utente.html"*/,
+            selector: 'page-home-utente',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\home-utente\home-utente.html"*/'<!--\n\n  Generated template for the HomeUtentePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>HomeUtente</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <p>Benvenuto nella Home Utente</p>\n\n  <button ion-button full color="light" (click)="visCatalogo()">Sfoglia Catalogo</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\home-utente\home-utente.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], HomeUtentePage);
     return HomeUtentePage;
 }());
@@ -463,15 +635,15 @@ var HomeUtentePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 133:
+/***/ 135:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeWorkPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(42);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -543,9 +715,9 @@ var HomeWorkPage = /** @class */ (function () {
     };
     HomeWorkPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-work',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-work\home-work.html"*/'<!--\n\n  Generated template for the HomeWorkPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>HomeWork</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n     <!-- <form (ngSubmit)="productForm()">-->\n\n        <ion-item>\n\n          <ion-label floating>Nome Prodotto</ion-label>\n\n          <!--<ion-input type="text" [(ngModel)]=“data.username”></ion-input>-->\n\n          <ion-input  #nomeProdotto></ion-input>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label floating>Codice</ion-label>\n\n         <!-- <ion-input type="text" value="{{codice}}" [(ngModel)]=“data.codice”></ion-input>-->\n\n         <ion-input  #codiceProdotto></ion-input>\n\n        </ion-item>\n\n        \n\n        <ion-item>\n\n            <ion-label floating>Data Scadenza</ion-label>\n\n            <ion-datetime displayFormat="DD/MM/YYYY" #myDate></ion-datetime>\n\n            \n\n        </ion-item>\n\n       \n\n       \n\n      <!--</form>-->\n\n        <button ion-button full (click)="inserisciProdotto(nomeProdotto.value,codiceProdotto.value,myDate.value)">AGGIUNGI PRODOTTO</button>\n\n        <button ion-button full (click)="scansiona()">SCANSIONA PRODOTTO</button>\n\n      \n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-work\home-work.html"*/,
+            selector: 'page-home-work',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\home-work\home-work.html"*/'<!--\n\n  Generated template for the HomeWorkPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>HomeWork</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n     <!-- <form (ngSubmit)="productForm()">-->\n\n        <ion-item>\n\n          <ion-label floating>Nome Prodotto</ion-label>\n\n          <!--<ion-input type="text" [(ngModel)]=“data.username”></ion-input>-->\n\n          <ion-input  #nomeProdotto></ion-input>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label floating>Codice</ion-label>\n\n         <!-- <ion-input type="text" value="{{codice}}" [(ngModel)]=“data.codice”></ion-input>-->\n\n         <ion-input  #codiceProdotto></ion-input>\n\n        </ion-item>\n\n        \n\n        <ion-item>\n\n            <ion-label floating>Data Scadenza</ion-label>\n\n            <ion-datetime displayFormat="DD/MM/YYYY" #myDate></ion-datetime>\n\n            \n\n        </ion-item>\n\n       \n\n       \n\n      <!--</form>-->\n\n        <button ion-button full (click)="inserisciProdotto(nomeProdotto.value,codiceProdotto.value,myDate.value)">AGGIUNGI PRODOTTO</button>\n\n        <button ion-button full (click)="scansiona()">SCANSIONA PRODOTTO</button>\n\n      \n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\home-work\home-work.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__["a" /* BarcodeScanner */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__["a" /* BarcodeScanner */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], HomeWorkPage);
     return HomeWorkPage;
 }());
@@ -554,17 +726,17 @@ var HomeWorkPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 134:
+/***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work_home_work__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_azienda_home_azienda__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work_home_work__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_azienda_home_azienda__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_home_admin_home__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_utente_home_utente__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_utente_home_utente__ = __webpack_require__(134);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -634,9 +806,9 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\login\login.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n    <!-- <ion-content padding>\n      <ion-list>\n\n        <ion-item>\n          <ion-label stacked>Username</ion-label>\n          <ion-input type="text"></ion-input>\n        </ion-item>\n      \n        <ion-item>\n          <ion-label stacked>Password</ion-label>\n          <ion-input type="password"></ion-input>\n        </ion-item>\n\n        <button ion-button full (click)="goToHome()">LOGIN</button>\n\n        <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n      \n      </ion-list> \n    </ion-content> -->\n\n    <ion-content padding>\n        <!--<form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">-->\n          <form #loginForm="ngForm" autocomplete="off" method="post" (ngSubmit)="logForm()" >\n          <ion-row>\n            <ion-col>\n              <ion-list inset>\n                <ion-item>\n                  <ion-input placeholder="Username" name="username" id="loginField" type="text" required [(ngModel)]="username" autocomplete="off" ></ion-input>\n                </ion-item>\n                <ion-item>\n                  <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>\n                </ion-item>\n              </ion-list>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col>\n              <div *ngIf="error" class="alert alert-danger">{{error}}</div>\n              <!-- <button ion-button full class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid" (click)="goToHome()">Login</button> -->\n              <button ion-button full (click)="goToHome()" [disabled]="!loginForm.form.valid" class="submit-btn" full type="submit">LOGIN</button>\n              <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n            </ion-col>\n          </ion-row>\n        </form>\n      </ion-content>\n    \n   \n      \n      \n\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\login\login.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n    <!-- <ion-content padding>\n\n      <ion-list>\n\n\n\n        <ion-item>\n\n          <ion-label stacked>Username</ion-label>\n\n          <ion-input type="text"></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-label stacked>Password</ion-label>\n\n          <ion-input type="password"></ion-input>\n\n        </ion-item>\n\n\n\n        <button ion-button full (click)="goToHome()">LOGIN</button>\n\n\n\n        <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n\n      \n\n      </ion-list> \n\n    </ion-content> -->\n\n\n\n    <ion-content padding>\n\n        <!--<form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">-->\n\n          <form #loginForm="ngForm" autocomplete="off" method="post" (ngSubmit)="logForm()" >\n\n          <ion-row>\n\n            <ion-col>\n\n              <ion-list inset>\n\n                <ion-item>\n\n                  <ion-input placeholder="Username" name="username" id="loginField" type="text" required [(ngModel)]="username" autocomplete="off" ></ion-input>\n\n                </ion-item>\n\n                <ion-item>\n\n                  <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>\n\n                </ion-item>\n\n              </ion-list>\n\n            </ion-col>\n\n          </ion-row>\n\n          <ion-row>\n\n            <ion-col>\n\n              <div *ngIf="error" class="alert alert-danger">{{error}}</div>\n\n              <!-- <button ion-button full class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid" (click)="goToHome()">Login</button> -->\n\n              <button ion-button full (click)="goToHome()" [disabled]="!loginForm.form.valid" class="submit-btn" full type="submit">LOGIN</button>\n\n              <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n\n            </ion-col>\n\n          </ion-row>\n\n        </form>\n\n      </ion-content>\n\n    \n\n   \n\n      \n\n      \n\n\n\n\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\pages\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], LoginPage);
     return LoginPage;
 }());
@@ -645,7 +817,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 145:
+/***/ 147:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -658,52 +830,60 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 145;
+webpackEmptyAsyncContext.id = 147;
 
 /***/ }),
 
-/***/ 188:
+/***/ 190:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/add-ritiro/add-ritiro.module": [
-		406,
-		9
+		408,
+		11
 	],
 	"../pages/admin-home/admin-home.module": [
-		407,
-		8
+		409,
+		10
 	],
 	"../pages/catalogo/catalogo.module": [
-		408,
-		7
+		410,
+		9
+	],
+	"../pages/conferma-ordine/conferma-ordine.module": [
+		411,
+		8
 	],
 	"../pages/home-azienda/home-azienda.module": [
-		409,
-		6
+		412,
+		7
 	],
 	"../pages/home-utente/home-utente.module": [
-		410,
-		5
+		413,
+		6
 	],
 	"../pages/home-work/home-work.module": [
-		411,
-		4
+		414,
+		5
 	],
 	"../pages/login/login.module": [
-		412,
+		416,
+		4
+	],
+	"../pages/ordina-prodotti/ordina-prodotti.module": [
+		415,
 		3
 	],
 	"../pages/prodotti-idonei/prodotti-idonei.module": [
-		413,
+		417,
 		2
 	],
 	"../pages/prodotti/prodotti.module": [
-		414,
+		418,
 		1
 	],
 	"../pages/punti-ritiro/punti-ritiro.module": [
-		415,
+		419,
 		0
 	]
 };
@@ -718,18 +898,18 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 188;
+webpackAsyncContext.id = 190;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 250:
+/***/ 252:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(260);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -737,36 +917,40 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 258:
+/***/ 260:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_work_home_work__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_camera__ = __webpack_require__(405);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_barcode_scanner__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prodotti_prodotti__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_azienda_home_azienda__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_work_home_work__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_camera__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_barcode_scanner__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prodotti_prodotti__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_azienda_home_azienda__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_admin_home_admin_home__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_punti_ritiro_punti_ritiro__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_prodotti_idonei_prodotti_idonei__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_add_ritiro_add_ritiro__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_home_utente_home_utente__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_home_utente_home_utente__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_catalogo_catalogo__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_ordina_prodotti_ordina_prodotti__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_conferma_ordine_conferma_ordine__ = __webpack_require__(131);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -802,20 +986,24 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_15__pages_prodotti_idonei_prodotti_idonei__["a" /* ProdottiIdoneiPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_add_ritiro_add_ritiro__["a" /* AddRitiroPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_home_utente_home_utente__["a" /* HomeUtentePage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_catalogo_catalogo__["a" /* CatalogoPage */]
+                __WEBPACK_IMPORTED_MODULE_18__pages_catalogo_catalogo__["a" /* CatalogoPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_ordina_prodotti_ordina_prodotti__["a" /* OrdinaProdottiPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_conferma_ordine_conferma_ordine__["a" /* ConfermaOrdinePage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_8__angular_http__["b" /* HttpModule */],
                 __WEBPACK_IMPORTED_MODULE_8__angular_http__["c" /* JsonpModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/add-ritiro/add-ritiro.module#AddRitiroPageModule', name: 'AddRitiroPage', segment: 'add-ritiro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/admin-home/admin-home.module#AdminHomePageModule', name: 'AdminHomePage', segment: 'admin-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/catalogo/catalogo.module#CatalogoPageModule', name: 'CatalogoPage', segment: 'catalogo', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conferma-ordine/conferma-ordine.module#ConfermaOrdinePageModule', name: 'ConfermaOrdinePage', segment: 'conferma-ordine', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-azienda/home-azienda.module#HomeAziendaPageModule', name: 'HomeAziendaPage', segment: 'home-azienda', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-utente/home-utente.module#HomeUtentePageModule', name: 'HomeUtentePage', segment: 'home-utente', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-work/home-work.module#HomeWorkPageModule', name: 'HomeWorkPage', segment: 'home-work', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ordina-prodotti/ordina-prodotti.module#OrdinaProdottiPageModule', name: 'OrdinaProdottiPage', segment: 'ordina-prodotti', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/prodotti-idonei/prodotti-idonei.module#ProdottiIdoneiPageModule', name: 'ProdottiIdoneiPage', segment: 'prodotti-idonei', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/prodotti/prodotti.module#ProdottiPageModule', name: 'ProdottiPage', segment: 'prodotti', priority: 'low', defaultHistory: [] },
@@ -823,7 +1011,7 @@ var AppModule = /** @class */ (function () {
                     ]
                 })
             ],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_7__pages_login_login__["a" /* LoginPage */],
@@ -835,14 +1023,16 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_15__pages_prodotti_idonei_prodotti_idonei__["a" /* ProdottiIdoneiPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_add_ritiro_add_ritiro__["a" /* AddRitiroPage */],
                 __WEBPACK_IMPORTED_MODULE_17__pages_home_utente_home_utente__["a" /* HomeUtentePage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_catalogo_catalogo__["a" /* CatalogoPage */]
+                __WEBPACK_IMPORTED_MODULE_18__pages_catalogo_catalogo__["a" /* CatalogoPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_ordina_prodotti_ordina_prodotti__["a" /* OrdinaProdottiPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_conferma_ordine_conferma_ordine__["a" /* ConfermaOrdinePage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_camera__["a" /* Camera */],
                 __WEBPACK_IMPORTED_MODULE_10__ionic_native_barcode_scanner__["a" /* BarcodeScanner */],
                 __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
-                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicErrorHandler */] }
+                { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
             ]
         })
     ], AppModule);
@@ -853,16 +1043,16 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 404:
+/***/ 406:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(248);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(136);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -888,9 +1078,9 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\Hp proBook\Desktop\progetti\APP-FSG\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -899,5 +1089,5 @@ var MyApp = /** @class */ (function () {
 
 /***/ })
 
-},[250]);
+},[252]);
 //# sourceMappingURL=main.js.map

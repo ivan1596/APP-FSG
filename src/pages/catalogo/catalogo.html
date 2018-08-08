@@ -23,13 +23,14 @@
             </ion-card-header>
             <ion-card-content>
                <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>
-               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> 
+               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p>
+               <ion-item>
+                   <ion-radio  value="Ordina" (click)="inserisciProdottiOrdinati(visualizzaProdottiCompleti)"></ion-radio>
+                </ion-item>
             </ion-card-content>
          
-          </ion-card>
-          <button ion-button>Oridna Prodotto</button>
-          
+          </ion-card> 
         </ion-item>
        </ion-list>
-
+ <button ion-button full color="light" (click)="scegliPuntiRitiro()">Ordina Prodotto/i</button>
 </ion-content>
