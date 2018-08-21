@@ -24,7 +24,7 @@ export class ProdottiPage {
   }
   InserisciProdottiIdonei(CodIdo:any,prodottoIdo:any){
     console.log("Hai inserito ",CodIdo,"indicandolo come prodotto idoneo");
-    console.log("Hai inserito il prodotto", + prodottoIdo,"indicandolo come idoneo");
+    console.log("Hai inserito il prodotto",  prodottoIdo,"indicandolo come idoneo");
     this.prodottiIdonei.push(prodottoIdo);
     this.CodProdottiIdonei.push(CodIdo);
     JSON.stringify(this.CodProdottiIdonei);

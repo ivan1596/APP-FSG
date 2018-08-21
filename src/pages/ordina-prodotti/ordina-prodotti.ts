@@ -23,7 +23,7 @@ export class OrdinaProdottiPage {
   }
   puntiRitiroList=[];
   citta=[];
-  puntoritiroSelezionato=[];
+  puntoritiroSelezionato=[]; 
   inserisciProdottiOrdinati(puntoSelezionato:any){
    this.puntoritiroSelezionato.push(puntoSelezionato);
    console.log("punto ritiro selezionato: ",this.puntoritiroSelezionato);

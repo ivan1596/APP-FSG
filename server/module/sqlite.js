@@ -180,6 +180,22 @@ module.exports = {
             callback(PuntiRitiro)
      });
      db.close();
-    }
+    },
+
+    delIdonei: function(){
+        let db = new sqlite3.Database(database);
+        let sql1 = 'DELETE FROM REGISTRO WHERE IDONEO = "SI"';
+       
+        db.run(sql1,function(err){ 
+            if(err){
+                console.error(err.message);
+
+            }
+            console.log('Catalogo Aggiornato');
+        });
+        db.close();
+
+    },
+
 
 }

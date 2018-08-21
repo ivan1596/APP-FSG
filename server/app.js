@@ -70,11 +70,11 @@ app.post('/modIdoneo', function(req, res){
         console.log(req.body);
         let codice =[];
         
-        for(c in req.body){
-        codice.push(req.body[c]);
-        console.log(codice);
-        sqlite.IdoneoSN(codice);
-        }
+          for(c in req.body){
+          codice.push(req.body[c]);
+          console.log(codice);
+          sqlite.IdoneoSN(codice);
+          }
        /*  db.run(sql,codice, function(err){
         if (err) {
             console.error(err.message);
@@ -142,8 +142,13 @@ app.post('/inserisciPuntiRitiro',function(req,res){
 
 app.get('/addCatalogo', function(req,res){
   sqlite.addCatalogo();
+  sqlite.delIdonei();
   console.log('Catalogo Aggiornato');
 });
+
+
+
+
 
 
   
