@@ -146,6 +146,16 @@ app.get('/addCatalogo', function(req,res){
   console.log('Catalogo Aggiornato');
 });
 
+app.post('/addUtente',function(req,res){
+  console.log('req.body utente= ',req.body);
+  var parsedInsert=JSON.parse(req.body);
+  var email = parsedInsert.email;
+  var psw= parsedInsert.psw;
+  
+  sqlite.addUtente(email,psw);
+  });
+
+
 
 
 

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PuntiRitiroPage } from '../punti-ritiro/punti-ritiro';
+
 import {ProdottiIdoneiPage} from '../prodotti-idonei/prodotti-idonei';
-import {ProdottiPage} from '../prodotti/prodotti';
+//import {ProdottiPage} from '../prodotti/prodotti';
+import { AddUtentePage } from '../add-utente/add-utente';
 
 /**
  * Generated class for the AdminHomePage page.
@@ -21,8 +22,8 @@ export class AdminHomePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  goToPuntiRitiroPortale(){
-    this.navCtrl.push(PuntiRitiroPage);
+  goToAddUtente(){
+    this.navCtrl.push(AddUtentePage);
   }
 
   goToProdottiPortale(){

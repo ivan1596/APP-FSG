@@ -197,5 +197,20 @@ module.exports = {
 
     },
 
+    addUtente: function(email,psw){
+        let db = new sqlite3.Database(database);
+        let sql1 = 'INSERT INTO UTENTE (Username, Password) VALUES (?,?) ';
+       
+        db.run(sql1,email,psw, function(err){
+            if(err){
+                console.error(err.message);
+
+            }
+            console.log('Utente Aggiunto');
+        });
+        db.close();
+
+    },
+
 
 }

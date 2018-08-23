@@ -5,10 +5,10 @@ webpackJsonp([5],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeWorkPageModule", function() { return HomeWorkPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeUtentePageModule", function() { return HomeUtentePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_utente__ = __webpack_require__(136);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HomeWorkPageModule = /** @class */ (function () {
-    function HomeWorkPageModule() {
+var HomeUtentePageModule = /** @class */ (function () {
+    function HomeUtentePageModule() {
     }
-    HomeWorkPageModule = __decorate([
+    HomeUtentePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__home_work__["a" /* HomeWorkPage */],
+                __WEBPACK_IMPORTED_MODULE_2__home_utente__["a" /* HomeUtentePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__home_work__["a" /* HomeWorkPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__home_utente__["a" /* HomeUtentePage */]),
             ],
         })
-    ], HomeWorkPageModule);
-    return HomeWorkPageModule;
+    ], HomeUtentePageModule);
+    return HomeUtentePageModule;
 }());
 
-//# sourceMappingURL=home-work.module.js.map
+//# sourceMappingURL=home-utente.module.js.map
 
 /***/ })
 

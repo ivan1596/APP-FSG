@@ -12,13 +12,13 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { ProdottiPage } from '../pages/prodotti/prodotti';
 import { HomeAziendaPage } from '../pages/home-azienda/home-azienda';
 import { AdminHomePage } from '../pages/admin-home/admin-home';
-import {PuntiRitiroPage} from '../pages/punti-ritiro/punti-ritiro';
 import {ProdottiIdoneiPage} from '../pages/prodotti-idonei/prodotti-idonei';
 import {AddRitiroPage} from '../pages/add-ritiro/add-ritiro';
 import {HomeUtentePage} from '../pages/home-utente/home-utente';
 import {CatalogoPage} from '../pages/catalogo/catalogo';
 import {OrdinaProdottiPage } from '../pages/ordina-prodotti/ordina-prodotti';
 import {ConfermaOrdinePage } from '../pages/conferma-ordine/conferma-ordine';
+import {AddUtentePage } from '../pages/add-utente/add-utente';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import {ConfermaOrdinePage } from '../pages/conferma-ordine/conferma-ordine';
     ProdottiPage,
     HomeAziendaPage,
     AdminHomePage,
-    PuntiRitiroPage,
+    AddUtentePage,
     ProdottiIdoneiPage,
     AddRitiroPage,
     HomeUtentePage,
@@ -50,7 +50,7 @@ import {ConfermaOrdinePage } from '../pages/conferma-ordine/conferma-ordine';
     ProdottiPage,
     HomeAziendaPage,
     AdminHomePage,
-    PuntiRitiroPage,
+    AddUtentePage,
     ProdottiIdoneiPage,
     AddRitiroPage,
     HomeUtentePage,

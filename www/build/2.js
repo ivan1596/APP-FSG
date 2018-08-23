@@ -5,10 +5,10 @@ webpackJsonp([2],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProdottiIdoneiPageModule", function() { return ProdottiIdoneiPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OrdinaProdottiPageModule", function() { return OrdinaProdottiPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_idonei__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ordina_prodotti__ = __webpack_require__(131);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ProdottiIdoneiPageModule = /** @class */ (function () {
-    function ProdottiIdoneiPageModule() {
+var OrdinaProdottiPageModule = /** @class */ (function () {
+    function OrdinaProdottiPageModule() {
     }
-    ProdottiIdoneiPageModule = __decorate([
+    OrdinaProdottiPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__prodotti_idonei__["a" /* ProdottiIdoneiPage */],
+                __WEBPACK_IMPORTED_MODULE_2__ordina_prodotti__["a" /* OrdinaProdottiPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__prodotti_idonei__["a" /* ProdottiIdoneiPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__ordina_prodotti__["a" /* OrdinaProdottiPage */]),
             ],
         })
-    ], ProdottiIdoneiPageModule);
-    return ProdottiIdoneiPageModule;
+    ], OrdinaProdottiPageModule);
+    return OrdinaProdottiPageModule;
 }());
 
-//# sourceMappingURL=prodotti-idonei.module.js.map
+//# sourceMappingURL=ordina-prodotti.module.js.map
 
 /***/ })
 
