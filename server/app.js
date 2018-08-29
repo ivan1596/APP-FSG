@@ -6,6 +6,8 @@ var logger = require('morgan');
 var methodOverride = require('method-override')
 var cors = require('cors');
 var sqlite = require("./module/sqlite.js");
+var http = require('http');
+var secret = 'ciaociao';
 const app = express();
 app.use(logger('dev'));
 
@@ -24,10 +26,29 @@ app.use(cors());
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
+  res.header('Access-Control-Allow-Methods', 'DELETE, PUT');
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
 
+app.post('/getLoginFormData',function(req,res){
+  console.log('req.body= ',req.body);
+  var parsedInsert=JSON.parse(req.body);
+  var user = parsedInsert.user;
+  var password = parsedInsert.password;
+  });
+app.get('/getUtenti',function(req,res){
+sqlite.getUtenti(function(Utenti){
+  var utentiList = {};
+  utentiList.Utenti=Utenti;
+  var stringUtenti= JSON.stringify(utentiList);
+  var allUserParsed=JSON.parse(stringUtenti);
+  utentiList=allUserParsed;
+  res.json(utentiList);
+  //console.log('res /utenti inviata la risposta è :',stringUtenti);
+});
+
+});
 app.get('/prodotti', function (req, res) {
   sqlite.getProdotti(function (Prodotti){
     var prodotti ={};
@@ -140,21 +161,12 @@ app.post('/inserisciPuntiRitiro',function(req,res){
   sqlite.inserisciPuntiRitiro(città,Via,CAP);
   });
 
+
 app.get('/addCatalogo', function(req,res){
   sqlite.addCatalogo();
   sqlite.delIdonei();
   console.log('Catalogo Aggiornato');
 });
-
-app.post('/addUtente',function(req,res){
-  console.log('req.body utente= ',req.body);
-  var parsedInsert=JSON.parse(req.body);
-  var email = parsedInsert.email;
-  var psw= parsedInsert.psw;
-  
-  sqlite.addUtente(email,psw);
-  });
-
 
 
 

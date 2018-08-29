@@ -4,6 +4,9 @@ import { HomeWorkPage } from '../home-work/home-work';
 import { HomeAziendaPage } from '../home-azienda/home-azienda';
 import { AdminHomePage } from '../admin-home/admin-home'
 import { HomeUtentePage } from '../home-utente/home-utente';
+import { Http } from '@angular/http';
+import { LoadingController } from 'ionic-angular';
+import { map } from 'rxjs/operators';
 
 
 //import { NgModel } from '@angular/forms';
@@ -15,18 +18,61 @@ import { HomeUtentePage } from '../home-utente/home-utente';
   templateUrl: 'login.html',
 })
 export class LoginPage {
-  username = {}
-  password = {}
+  username :any = {}
+  password :any = {}
+  data:any={}
+  loading:any;
+  utenti:any=[];
+  login =false;
+  visualizzaUtenti:any =[];
+  constructor( private loadingCtrl: LoadingController,public navCtrl: NavController, public navParams: NavParams,public http:Http) {
+  }
+  showLoader(){
+ 
+    this.loading = this.loadingCtrl.create({
+      content: "Authenticating..."
+    });
+ 
+    this.loading.present();
+ 
+  }
   logForm() {
-    console.log(this.username )
-    console.log(this.password)
+    this.data.user=this.username;
+    this.data.password=this.password;
+    var dataStringed= JSON.stringify(this.data);
+    this.http.post('http://localhost:8080/getLoginFormData',dataStringed )
+    .subscribe(data => {
+   
+    }, error => {
+    console.log('Oooops!');
+    });
+  
 
   }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
+ 
   goToHome(){
+    this.login=false;
+    this.http.get('http://localhost:8080/getUtenti' ).pipe(
+      map(res => res.json())
+    ).subscribe(utentiList => {
+    for(var x in utentiList.Utenti){
+      this.visualizzaUtenti[x]=utentiList.Utenti[x];
+      if (this.username == utentiList.Utenti[x].Username){
+        console.log('userok');
+        if(this.password==utentiList.Utenti[x].Password){
+          console.log('user e pass controllate login ok');
+          this.login=true;
+          console.log('login vale',this.login);
+          if(this.login=true){
+            this.navCtrl.push(HomeUtentePage);
+            this.login=false;
+          }
+        }
+      }
+      console.log('login vale: ',this.login);
+        }      
+  });
     const impiegato_user = {
       user:"impiegato",
       password: "impiegato"
@@ -46,11 +92,6 @@ export class LoginPage {
       user:"utente",
       password: "utente"
     };
-
-
-
-
-
     var user= this.username;
     var psw = this.password;
   

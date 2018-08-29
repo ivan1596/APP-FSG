@@ -20,7 +20,25 @@ module.exports = {
         db.close();
 
         },
-    
+    getUtenti :function(callback){
+        let db = new sqlite3.Database(database);
+        var Utenti=[];
+        let sql = `SELECT * FROM UTENTE`;
+        db.all(sql, [], (err, rows) => {
+            if (err) {
+                throw err;
+            }
+            rows.forEach((row) => {
+                var utente = {};
+                utente.Username=row.Username;
+                utente.Password=row.Password;
+                utente.Email=row.Email;
+                Utenti.push(utente)  
+            });
+            callback(Utenti)
+        });
+        db.close(); 
+    },
     getProdotti: function (callback) {
         let db = new sqlite3.Database(database);
 
@@ -192,21 +210,6 @@ module.exports = {
 
             }
             console.log('Catalogo Aggiornato');
-        });
-        db.close();
-
-    },
-
-    addUtente: function(email,psw){
-        let db = new sqlite3.Database(database);
-        let sql1 = 'INSERT INTO UTENTE (Username, Password) VALUES (?,?) ';
-       
-        db.run(sql1,email,psw, function(err){
-            if(err){
-                console.error(err.message);
-
-            }
-            console.log('Utente Aggiunto');
         });
         db.close();
 

@@ -6,8 +6,8 @@ webpackJsonp([12],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddRitiroPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,9 +58,9 @@ var AddRitiroPage = /** @class */ (function () {
     };
     AddRitiroPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-add-ritiro',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/'<!--\n\n  Generated template for the AddRitiroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AddRitiro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content padding>\n\n<h1>Aggiungi un punto di ritiro</h1>\n\n<ion-list>\n\n\n\n    <ion-item>\n\n      <ion-label floating>Città</ion-label>\n\n      <ion-input  #citta></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-label floating>Via</ion-label>\n\n      <ion-input  #Via></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label floating>CAP</ion-label>\n\n        <ion-input  #CAP></ion-input>\n\n    </ion-item>\n\n  \n\n  </ion-list>\n\n  <button ion-button full (click)="inserisciPuntiRitiro(citta.value,Via.value,CAP.value)" >Inserisci Punto Ritiro</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/,
+            selector: 'page-add-ritiro',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/'<!--\n\n  Generated template for the AddRitiroPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AddRitiro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n\n\n<ion-content padding>\n\n<h1>Aggiungi un punto di ritiro</h1>\n\n<ion-list>\n\n\n\n    <ion-item>\n\n      <ion-label floating>Città</ion-label>\n\n      <ion-input  #citta></ion-input>\n\n    </ion-item>\n\n  \n\n    <ion-item>\n\n      <ion-label floating>Via</ion-label>\n\n      <ion-input  #Via></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n        <ion-label floating>CAP</ion-label>\n\n        <ion-input  #CAP></ion-input>\n\n    </ion-item>\n\n  \n\n  </ion-list>\n\n  <button ion-button full (click)="inserisciPuntiRitiro(citta.value,Via.value,CAP.value)" >Inserisci Punto Ritiro</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\add-ritiro\add-ritiro.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
     ], AddRitiroPage);
     return AddRitiroPage;
 }());
@@ -75,8 +75,8 @@ var AddRitiroPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddUtentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -128,12 +128,11 @@ var AddUtentePage = /** @class */ (function () {
     };
     AddUtentePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-add-utente',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\add-utente\add-utente.html"*/'<!--\n  Generated template for the AddUtentePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Aggiungi Utente</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <h1>Aggiungi un Utente</h1>\n    <ion-list>\n    \n        <ion-item>\n          <ion-label floating>E-Mail</ion-label>\n          <ion-input  #email></ion-input>\n        </ion-item>\n      \n        <ion-item>\n          <ion-label floating>Password</ion-label>\n          <ion-input  #password></ion-input>\n        </ion-item>\n    \n      \n      </ion-list>\n      <button ion-button full (click)="inserisciUtente(email.value,password.value)" >Inserisci Utente</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\add-utente\add-utente.html"*/,
+            selector: 'page-add-utente',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\add-utente\add-utente.html"*/'<!--\n\n  Generated template for the AddUtentePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Aggiungi Utente</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <h1>Aggiungi un Utente</h1>\n\n    <ion-list>\n\n    \n\n        <ion-item>\n\n          <ion-label floating>E-Mail</ion-label>\n\n          <ion-input  #email></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-label floating>Password</ion-label>\n\n          <ion-input  #password></ion-input>\n\n        </ion-item>\n\n    \n\n      \n\n      </ion-list>\n\n      <button ion-button full (click)="inserisciUtente(email.value,password.value)" >Inserisci Utente</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\add-utente\add-utente.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]])
     ], AddUtentePage);
     return AddUtentePage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=add-utente.js.map
@@ -146,7 +145,7 @@ var AddUtentePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminHomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_idonei_prodotti_idonei__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_utente_add_utente__ = __webpack_require__(127);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -188,12 +187,11 @@ var AdminHomePage = /** @class */ (function () {
     };
     AdminHomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-admin-home',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\admin-home\admin-home.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>AdminHome</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h2>\n    Benvenuto nell\'interfaccia gestionale dell\'amministratore del portale\n  </h2>\n\n  <button ion-button full (click)="goToProdottiPortale()">Visualizza i prodotti del Portale</button>\n  <button ion-button full  (click)="goToAddUtente()">Inserisci Utente</button>\n\n\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\admin-home\admin-home.html"*/,
+            selector: 'page-admin-home',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\admin-home\admin-home.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AdminHome</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <h2>\n\n    Benvenuto nell\'interfaccia gestionale dell\'amministratore del portale\n\n  </h2>\n\n\n\n  <button ion-button full (click)="goToProdottiPortale()">Visualizza i prodotti del Portale</button>\n\n  <button ion-button full  (click)="goToAddUtente()">Inserisci Utente</button>\n\n\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\admin-home\admin-home.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], AdminHomePage);
     return AdminHomePage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=admin-home.js.map
@@ -206,9 +204,9 @@ var AdminHomePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProdottiIdoneiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -247,9 +245,9 @@ var ProdottiIdoneiPage = /** @class */ (function () {
     };
     ProdottiIdoneiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-prodotti-idonei',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/'<!--\n  Generated template for the ProdottiIdoneiPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>ProdottiIdonei</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list >\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n          <ion-card>\n             \n            <ion-card-header>\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n            </ion-card-header>\n            <ion-card-content>\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n               <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n              \n            </ion-card-content>\n         \n          </ion-card>\n        \n        </ion-item>\n       </ion-list>\n       <button ion-button (click)="addCat()">Aggiungi Al Catalogo</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/,
+            selector: 'page-prodotti-idonei',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/'<!--\n\n  Generated template for the ProdottiIdoneiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>ProdottiIdonei</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n          <ion-card>\n\n             \n\n            <ion-card-header>\n\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n               <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n              \n\n            </ion-card-content>\n\n         \n\n          </ion-card>\n\n        \n\n        </ion-item>\n\n       </ion-list>\n\n       <button ion-button (click)="addCat()">Aggiungi Al Catalogo</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\prodotti-idonei\prodotti-idonei.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
     ], ProdottiIdoneiPage);
     return ProdottiIdoneiPage;
 }());
@@ -265,9 +263,9 @@ var ProdottiIdoneiPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CatalogoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ordina_prodotti_ordina_prodotti__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -321,9 +319,9 @@ var CatalogoPage = /** @class */ (function () {
     };
     CatalogoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-catalogo',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\catalogo\catalogo.html"*/'<!--\n\n  Generated template for the CatalogoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Catalogo</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n          <ion-card>\n\n             \n\n            <ion-card-header>\n\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p>\n\n               <ion-item>\n\n                   <ion-radio  value="Ordina" (click)="inserisciProdottiOrdinati(visualizzaProdottiCompleti)"></ion-radio>\n\n                </ion-item>\n\n            </ion-card-content>\n\n         \n\n          </ion-card> \n\n        </ion-item>\n\n       </ion-list>\n\n <button ion-button full color="light" (click)="scegliPuntiRitiro()">Ordina Prodotto/i</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\catalogo\catalogo.html"*/,
+            selector: 'page-catalogo',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\catalogo\catalogo.html"*/'<!--\n\n  Generated template for the CatalogoPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Catalogo</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n          <ion-card>\n\n             \n\n            <ion-card-header>\n\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p>\n\n               <ion-item>\n\n                   <ion-radio  value="Ordina" (click)="inserisciProdottiOrdinati(visualizzaProdottiCompleti)"></ion-radio>\n\n                </ion-item>\n\n            </ion-card-content>\n\n         \n\n          </ion-card> \n\n        </ion-item>\n\n       </ion-list>\n\n <button ion-button full color="light" (click)="scegliPuntiRitiro()">Ordina Prodotto/i</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\catalogo\catalogo.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], CatalogoPage);
     return CatalogoPage;
 }());
@@ -339,9 +337,9 @@ var CatalogoPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrdinaProdottiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__conferma_ordine_conferma_ordine__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -397,9 +395,9 @@ var OrdinaProdottiPage = /** @class */ (function () {
     };
     OrdinaProdottiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ordina-prodotti',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\ordina-prodotti\ordina-prodotti.html"*/'<!--\n\n  Generated template for the OrdinaProdottiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Punti di ritiro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n<ion-list>\n\n  \n\n  <ion-item *ngFor="let visualizzaPuntiRitiro of puntiRitiroList;let visualizzaCitta of citta; let i = index;">\n\n    <ion-card>\n\n\n\n      <img src="assets/imgs/eurospin.jpeg">\n\n      <ion-fab right top>\n\n        <button ion-fab value="SelezionaPuntoritiro" (click)="inserisciProdottiOrdinati(visualizzaPuntiRitiro)">\n\n          <ion-icon name="add"></ion-icon>\n\n        </button>\n\n      </ion-fab>\n\n    \n\n      <ion-item>\n\n        <ion-icon name="cart" item-start large></ion-icon>\n\n        <h2>{{visualizzaPuntiRitiro.citta}}</h2>\n\n        <p>{{visualizzaPuntiRitiro.Via}}</p>\n\n        <p>{{visualizzaPuntiRitiro.Cap}}</p>\n\n      </ion-item>    \n\n    </ion-card>\n\n    \n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\ordina-prodotti\ordina-prodotti.html"*/,
+            selector: 'page-ordina-prodotti',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\ordina-prodotti\ordina-prodotti.html"*/'<!--\n\n  Generated template for the OrdinaProdottiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Punti di ritiro</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n<ion-list>\n\n  \n\n  <ion-item *ngFor="let visualizzaPuntiRitiro of puntiRitiroList;let visualizzaCitta of citta; let i = index;">\n\n    <ion-card>\n\n\n\n      <img src="assets/imgs/eurospin.jpeg">\n\n      <ion-fab right top>\n\n        <button ion-fab value="SelezionaPuntoritiro" (click)="inserisciProdottiOrdinati(visualizzaPuntiRitiro)">\n\n          <ion-icon name="add"></ion-icon>\n\n        </button>\n\n      </ion-fab>\n\n    \n\n      <ion-item>\n\n        <ion-icon name="cart" item-start large></ion-icon>\n\n        <h2>{{visualizzaPuntiRitiro.citta}}</h2>\n\n        <p>{{visualizzaPuntiRitiro.Via}}</p>\n\n        <p>{{visualizzaPuntiRitiro.Cap}}</p>\n\n      </ion-item>    \n\n    </ion-card>\n\n    \n\n    </ion-item>\n\n  </ion-list>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\ordina-prodotti\ordina-prodotti.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], OrdinaProdottiPage);
     return OrdinaProdottiPage;
 }());
@@ -415,7 +413,7 @@ var OrdinaProdottiPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ConfermaOrdinePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__login_login__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -476,9 +474,9 @@ var ConfermaOrdinePage = /** @class */ (function () {
     };
     ConfermaOrdinePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-conferma-ordine',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\conferma-ordine\conferma-ordine.html"*/'<!--\n\n  Generated template for the ConfermaOrdinePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>confermaOrdine</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n  <label></label>\n\n <ion-card>\n\n  <ion-card-header>\n\n   <b>Città punto ritiro scelto : {{nomePuntoRitiro}}</b>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n   <b>Via: </b><p>{{viaPuntoRitiro}}</p>\n\n  <b>Cap: </b> <p>{{capPuntoRitiro}}</p>\n\n  </ion-card-content>\n\n\n\n</ion-card> \n\n<ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiOrdinati of prodottiOrdinati">\n\n          <ion-card>\n\n            <ion-card-header>\n\n             <b>Hai ordinato questo prodotto:{{visualizzaProdottiOrdinati.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{visualizzaProdottiOrdinati.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{visualizzaProdottiOrdinati.codice}}</p>\n\n            </ion-card-content>\n\n          </ion-card> \n\n        </ion-item>\n\n       </ion-list>\n\n     <button ion-button full color="light" (click)=" showAlert()">Conferma Ordine</button>  \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\conferma-ordine\conferma-ordine.html"*/,
+            selector: 'page-conferma-ordine',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\conferma-ordine\conferma-ordine.html"*/'<!--\n\n  Generated template for the ConfermaOrdinePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>confermaOrdine</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n  <label></label>\n\n <ion-card>\n\n  <ion-card-header>\n\n   <b>Città punto ritiro scelto : {{nomePuntoRitiro}}</b>\n\n  </ion-card-header>\n\n  <ion-card-content>\n\n   <b>Via: </b><p>{{viaPuntoRitiro}}</p>\n\n  <b>Cap: </b> <p>{{capPuntoRitiro}}</p>\n\n  </ion-card-content>\n\n\n\n</ion-card> \n\n<ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiOrdinati of prodottiOrdinati">\n\n          <ion-card>\n\n            <ion-card-header>\n\n             <b>Hai ordinato questo prodotto:{{visualizzaProdottiOrdinati.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{visualizzaProdottiOrdinati.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{visualizzaProdottiOrdinati.codice}}</p>\n\n            </ion-card-content>\n\n          </ion-card> \n\n        </ion-item>\n\n       </ion-list>\n\n     <button ion-button full color="light" (click)=" showAlert()">Conferma Ordine</button>  \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\conferma-ordine\conferma-ordine.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* NavParams */]])
     ], ConfermaOrdinePage);
     return ConfermaOrdinePage;
 }());
@@ -493,9 +491,9 @@ var ConfermaOrdinePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeWorkPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -567,9 +565,9 @@ var HomeWorkPage = /** @class */ (function () {
     };
     HomeWorkPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-work',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-work\home-work.html"*/'<!--\n\n  Generated template for the HomeWorkPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>HomeWork</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n     <!-- <form (ngSubmit)="productForm()">-->\n\n        <ion-item>\n\n          <ion-label floating>Nome Prodotto</ion-label>\n\n          <!--<ion-input type="text" [(ngModel)]=“data.username”></ion-input>-->\n\n          <ion-input  #nomeProdotto></ion-input>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label floating>Codice</ion-label>\n\n         <!-- <ion-input type="text" value="{{codice}}" [(ngModel)]=“data.codice”></ion-input>-->\n\n         <ion-input  #codiceProdotto></ion-input>\n\n        </ion-item>\n\n        \n\n        <ion-item>\n\n            <ion-label floating>Data Scadenza</ion-label>\n\n            <ion-datetime displayFormat="DD/MM/YYYY" #myDate></ion-datetime>\n\n            \n\n        </ion-item>\n\n       \n\n       \n\n      <!--</form>-->\n\n        <button ion-button full (click)="inserisciProdotto(nomeProdotto.value,codiceProdotto.value,myDate.value)">AGGIUNGI PRODOTTO</button>\n\n        <button ion-button full (click)="scansiona()">SCANSIONA PRODOTTO</button>\n\n      \n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-work\home-work.html"*/,
+            selector: 'page-home-work',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\home-work\home-work.html"*/'<!--\n\n  Generated template for the HomeWorkPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>HomeWork</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list>\n\n     <!-- <form (ngSubmit)="productForm()">-->\n\n        <ion-item>\n\n          <ion-label floating>Nome Prodotto</ion-label>\n\n          <!--<ion-input type="text" [(ngModel)]=“data.username”></ion-input>-->\n\n          <ion-input  #nomeProdotto></ion-input>\n\n        </ion-item>\n\n\n\n        <ion-item>\n\n          <ion-label floating>Codice</ion-label>\n\n         <!-- <ion-input type="text" value="{{codice}}" [(ngModel)]=“data.codice”></ion-input>-->\n\n         <ion-input  #codiceProdotto></ion-input>\n\n        </ion-item>\n\n        \n\n        <ion-item>\n\n            <ion-label floating>Data Scadenza</ion-label>\n\n            <ion-datetime displayFormat="DD/MM/YYYY" #myDate></ion-datetime>\n\n            \n\n        </ion-item>\n\n       \n\n       \n\n      <!--</form>-->\n\n        <button ion-button full (click)="inserisciProdotto(nomeProdotto.value,codiceProdotto.value,myDate.value)">AGGIUNGI PRODOTTO</button>\n\n        <button ion-button full (click)="scansiona()">SCANSIONA PRODOTTO</button>\n\n      \n\n      </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\home-work\home-work.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__["a" /* BarcodeScanner */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__["a" /* BarcodeScanner */], __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* Http */]])
     ], HomeWorkPage);
     return HomeWorkPage;
 }());
@@ -584,7 +582,7 @@ var HomeWorkPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeAziendaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_prodotti__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_ritiro_add_ritiro__ = __webpack_require__(126);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -616,9 +614,9 @@ var HomeAziendaPage = /** @class */ (function () {
     };
     HomeAziendaPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-azienda',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-azienda\home-azienda.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Home Azienda\n        </ion-title>\n    </ion-navbar>\n\n</ion-header>\n\n<ion-content>\n    <h1>\n        Benvenuto nella home di gestione aziendale \n    </h1>\n\n    <button ion-button full (click)="goToProdotti()">Visualizza i prodotti</button>\n    <button ion-button full  (click)="goToPuntiRitiro()">Inserisci punti di ritiro</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-azienda\home-azienda.html"*/,
+            selector: 'page-home-azienda',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\home-azienda\home-azienda.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <ion-title>\n\n            Home Azienda\n\n        </ion-title>\n\n    </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <h1>\n\n        Benvenuto nella home di gestione aziendale \n\n    </h1>\n\n\n\n    <button ion-button full (click)="goToProdotti()">Visualizza i prodotti</button>\n\n    <button ion-button full  (click)="goToPuntiRitiro()">Inserisci punti di ritiro</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\home-azienda\home-azienda.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], HomeAziendaPage);
     return HomeAziendaPage;
 }());
@@ -633,9 +631,9 @@ var HomeAziendaPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProdottiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -692,9 +690,9 @@ var ProdottiPage = /** @class */ (function () {
     };
     ProdottiPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-prodotti',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti\prodotti.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prodotti</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n      <ion-list >\n\n       <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n         <ion-card>\n\n            \n\n           <ion-card-header>\n\n            <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n           </ion-card-header>\n\n           <ion-card-content>\n\n              <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n              <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n              <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n              <ion-item>\n\n                  <ion-radio  value="Idoneo" (click)="InserisciProdottiIdonei(visualizzaProdottiCompleti.codice,visualizzaProdottiCompleti.nome)"></ion-radio>\n\n               </ion-item>\n\n           </ion-card-content>\n\n        \n\n         </ion-card>\n\n       \n\n       </ion-item>\n\n      </ion-list>\n\n \n\n     <button ion-button full color="light" (click)="inviaProd()">Invia Prodotti Idonei</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\prodotti\prodotti.html"*/,
+            selector: 'page-prodotti',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\prodotti\prodotti.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Prodotti</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n<ion-content padding>\n\n\n\n      <ion-list >\n\n       <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n         <ion-card>\n\n            \n\n           <ion-card-header>\n\n            <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n           </ion-card-header>\n\n           <ion-card-content>\n\n              <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n              <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n              <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n              <ion-item>\n\n                  <ion-radio  value="Idoneo" (click)="InserisciProdottiIdonei(visualizzaProdottiCompleti.codice,visualizzaProdottiCompleti.nome)"></ion-radio>\n\n               </ion-item>\n\n           </ion-card-content>\n\n        \n\n         </ion-card>\n\n       \n\n       </ion-item>\n\n      </ion-list>\n\n \n\n     <button ion-button full color="light" (click)="inviaProd()">Invia Prodotti Idonei</button>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\prodotti\prodotti.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]])
     ], ProdottiPage);
     return ProdottiPage;
 }());
@@ -709,7 +707,7 @@ var ProdottiPage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeUtentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__catalogo_catalogo__ = __webpack_require__(130);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -742,9 +740,9 @@ var HomeUtentePage = /** @class */ (function () {
     };
     HomeUtentePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home-utente',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-utente\home-utente.html"*/'<!--\n  Generated template for the HomeUtentePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>HomeUtente</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <p>Benvenuto nella Home Utente</p>\n  <button ion-button full color="light" (click)="visCatalogo()">Sfoglia Catalogo</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\home-utente\home-utente.html"*/,
+            selector: 'page-home-utente',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\home-utente\home-utente.html"*/'<!--\n\n  Generated template for the HomeUtentePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>HomeUtente</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <p>Benvenuto nella Home Utente</p>\n\n  <button ion-button full color="light" (click)="visCatalogo()">Sfoglia Catalogo</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\home-utente\home-utente.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], HomeUtentePage);
     return HomeUtentePage;
 }());
@@ -860,13 +858,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_work_home_work__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_camera__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_barcode_scanner__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prodotti_prodotti__ = __webpack_require__(135);
@@ -985,7 +983,7 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(69);
@@ -1014,9 +1012,9 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
     return MyApp;
 }());
@@ -1031,11 +1029,14 @@ var MyApp = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work_home_work__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_azienda_home_azienda__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_home_admin_home__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_utente_home_utente__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operators__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1051,19 +1052,60 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 //import { NgModel } from '@angular/forms';
 var LoginPage = /** @class */ (function () {
-    function LoginPage(navCtrl, navParams) {
+    function LoginPage(loadingCtrl, navCtrl, navParams, http) {
+        this.loadingCtrl = loadingCtrl;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.http = http;
         this.username = {};
         this.password = {};
+        this.data = {};
+        this.utenti = [];
+        this.login = false;
+        this.visualizzaUtenti = [];
     }
+    LoginPage.prototype.showLoader = function () {
+        this.loading = this.loadingCtrl.create({
+            content: "Authenticating..."
+        });
+        this.loading.present();
+    };
     LoginPage.prototype.logForm = function () {
-        console.log(this.username);
-        console.log(this.password);
+        this.data.user = this.username;
+        this.data.password = this.password;
+        var dataStringed = JSON.stringify(this.data);
+        this.http.post('http://localhost:8080/getLoginFormData', dataStringed)
+            .subscribe(function (data) {
+        }, function (error) {
+            console.log('Oooops!');
+        });
     };
     LoginPage.prototype.goToHome = function () {
+        var _this = this;
+        this.login = false;
+        this.http.get('http://localhost:8080/getUtenti').pipe(Object(__WEBPACK_IMPORTED_MODULE_7_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (utentiList) {
+            for (var x in utentiList.Utenti) {
+                _this.visualizzaUtenti[x] = utentiList.Utenti[x];
+                if (_this.username == utentiList.Utenti[x].Username) {
+                    console.log('userok');
+                    if (_this.password == utentiList.Utenti[x].Password) {
+                        console.log('user e pass controllate login ok');
+                        _this.login = true;
+                        console.log('login vale', _this.login);
+                        if (_this.login = true) {
+                            _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__home_utente_home_utente__["a" /* HomeUtentePage */]);
+                            _this.login = false;
+                        }
+                    }
+                }
+                console.log('login vale: ', _this.login);
+            }
+        });
         var impiegato_user = {
             user: "impiegato",
             password: "impiegato"
@@ -1105,9 +1147,9 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\login\login.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n    <!-- <ion-content padding>\n      <ion-list>\n\n        <ion-item>\n          <ion-label stacked>Username</ion-label>\n          <ion-input type="text"></ion-input>\n        </ion-item>\n      \n        <ion-item>\n          <ion-label stacked>Password</ion-label>\n          <ion-input type="password"></ion-input>\n        </ion-item>\n\n        <button ion-button full (click)="goToHome()">LOGIN</button>\n\n        <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n      \n      </ion-list> \n    </ion-content> -->\n\n    <ion-content padding>\n        <!--<form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">-->\n          <form #loginForm="ngForm" autocomplete="off" method="post" (ngSubmit)="logForm()" >\n          <ion-row>\n            <ion-col>\n              <ion-list inset>\n                <ion-item>\n                  <ion-input placeholder="Username" name="username" id="loginField" type="text" required [(ngModel)]="username" autocomplete="off" ></ion-input>\n                </ion-item>\n                <ion-item>\n                  <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>\n                </ion-item>\n              </ion-list>\n            </ion-col>\n          </ion-row>\n          <ion-row>\n            <ion-col>\n              <div *ngIf="error" class="alert alert-danger">{{error}}</div>\n              <!-- <button ion-button full class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid" (click)="goToHome()">Login</button> -->\n              <button ion-button full (click)="goToHome()" [disabled]="!loginForm.form.valid" class="submit-btn" full type="submit">LOGIN</button>\n              <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n            </ion-col>\n          </ion-row>\n        </form>\n      </ion-content>\n    \n   \n      \n      \n\n\n'/*ion-inline-end:"C:\Users\Ivan\Desktop\Projects\APP-FSG\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\login\login.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>Login</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n    <!-- <ion-content padding>\n\n      <ion-list>\n\n\n\n        <ion-item>\n\n          <ion-label stacked>Username</ion-label>\n\n          <ion-input type="text"></ion-input>\n\n        </ion-item>\n\n      \n\n        <ion-item>\n\n          <ion-label stacked>Password</ion-label>\n\n          <ion-input type="password"></ion-input>\n\n        </ion-item>\n\n\n\n        <button ion-button full (click)="goToHome()">LOGIN</button>\n\n\n\n        <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n\n      \n\n      </ion-list> \n\n    </ion-content> -->\n\n\n\n    <ion-content padding>\n\n        <!--<form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">-->\n\n          <form #loginForm="ngForm" autocomplete="off" method="post" (ngSubmit)="logForm()" >\n\n          <ion-row>\n\n            <ion-col>\n\n              <ion-list inset>\n\n                <ion-item>\n\n                  <ion-input placeholder="Username" name="username" id="loginField" type="text" required [(ngModel)]="username" autocomplete="off" ></ion-input>\n\n                </ion-item>\n\n                <ion-item>\n\n                  <ion-input placeholder="Password" name="password" id="passwordField" type="password" required [(ngModel)]="password"></ion-input>\n\n                </ion-item>\n\n              </ion-list>\n\n            </ion-col>\n\n          </ion-row>\n\n          <ion-row>\n\n            <ion-col>\n\n              <div *ngIf="error" class="alert alert-danger">{{error}}</div>\n\n              <!-- <button ion-button full class="submit-btn" full type="submit" [disabled]="!loginForm.form.valid" (click)="goToHome()">Login</button> -->\n\n              <button ion-button full (click)="goToHome()" [disabled]="!loginForm.form.valid" class="submit-btn" full type="submit">LOGIN</button>\n\n              <button ion-button full color="light" (click)="goToReg()">REGISTRAZIONE</button>\n\n            </ion-col>\n\n          </ion-row>\n\n        </form>\n\n      </ion-content>\n\n    \n\n   \n\n      \n\n      \n\n\n\n\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSG\src\pages\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_6__angular_http__["a" /* Http */]])
     ], LoginPage);
     return LoginPage;
 }());
