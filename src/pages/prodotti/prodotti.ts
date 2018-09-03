@@ -28,7 +28,7 @@ export class ProdottiPage {
     this.prodottiIdonei.push(prodottoIdo);
     this.CodProdottiIdonei.push(CodIdo);
     JSON.stringify(this.CodProdottiIdonei);
-    this.http.post('http://localhost:8080/modIdoneo',this.CodProdottiIdonei ).pipe(
+    this.http.post('http://192.168.1.136:8080/modIdoneo',this.CodProdottiIdonei ).pipe(
             map(res => res.json())
         ).subscribe(response => {
           console.log('POST Response:', response);
@@ -46,7 +46,7 @@ export class ProdottiPage {
   
   
   ionViewDidLoad() {
-       this.http.get('http://localhost:8080/prodotti' ).pipe(
+       this.http.get('http://192.168.1.136:8080/prodotti' ).pipe(
         map(res => res.json())
       ).subscribe(productList => {
       for(var x in productList.Prodotti){

@@ -35,7 +35,7 @@ export class OrdinaProdottiPage {
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrdinaProdottiPage');
-     this.http.get('http://localhost:8080/getPuntiRitiro' ).pipe(
+     this.http.get('http://192.168.1.136:8080/getPuntiRitiro' ).pipe(
       map(res => res.json())
     ).subscribe(productList => {
     for(var x in productList.Prodotti){

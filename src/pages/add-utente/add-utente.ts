@@ -24,7 +24,7 @@ export class AddUtentePage {
 
   inserisciUtente(email,psw){
     var datiUtente = JSON.stringify({email,psw});
-    this.http.post('http://localhost:8080/addUtente', datiUtente)
+    this.http.post('http://192.168.1.136:8080/addUtente', datiUtente)
     .subscribe(data => {
     console.log('data log: ',datiUtente);
     //https://stackoverflow.com/questions/39574305/property-body-does-not-exist-on-type-response

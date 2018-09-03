@@ -36,7 +36,7 @@ export class CatalogoPage {
     } 
   }
   ionViewDidLoad() {
-    this.http.get('http://localhost:8080/getCatalogo' ).pipe(
+    this.http.get('http://192.168.1.136:8080/getCatalogo' ).pipe(
       map(res => res.json())
     ).subscribe(productList => {
     for(var x in productList.Prodotti){

@@ -40,7 +40,7 @@ export class LoginPage {
     this.data.user=this.username;
     this.data.password=this.password;
     var dataStringed= JSON.stringify(this.data);
-    this.http.post('http://localhost:8080/getLoginFormData',dataStringed )
+    this.http.post('http://192.168.1.136:8080/getLoginFormData',dataStringed )
     .subscribe(data => {
    
     }, error => {
@@ -53,7 +53,7 @@ export class LoginPage {
  
   goToHome(){
     this.login=false;
-    this.http.get('http://localhost:8080/getUtenti' ).pipe(
+    this.http.get('http://192.168.1.136:8080/getUtenti' ).pipe(
       map(res => res.json())
     ).subscribe(utentiList => {
     for(var x in utentiList.Utenti){

@@ -27,7 +27,7 @@ export class AddRitiroPage {
     var dataStringed = JSON.stringify(this.data);
     console.log('data vale: ',dataStringed);
     var datiPuntoRitiro = JSON.stringify({città,Via,CAP});
-    this.http.post('http://localhost:8080/inserisciPuntiRitiro', datiPuntoRitiro)
+    this.http.post('http://192.168.1.136:8080/inserisciPuntiRitiro', datiPuntoRitiro)
   .subscribe(data => {
   console.log('data log: ',data);
   //https://stackoverflow.com/questions/39574305/property-body-does-not-exist-on-type-response

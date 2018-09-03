@@ -20,7 +20,7 @@ export class ProdottiIdoneiPage {
   visualizzaProdotti=[];
 
   addCat(){
-    this.http.get('http://localhost:8080/addCatalogo' ).pipe(
+    this.http.get('http://192.168.1.136:8080/addCatalogo' ).pipe(
         map(res => res.json())
       ).subscribe(response => {
         console.log('Catalogo Aggiornato');
@@ -29,7 +29,7 @@ export class ProdottiIdoneiPage {
   }
 
   ionViewDidLoad() {
-    this.http.get('http://localhost:8080/prodottiIdonei' ).pipe(
+    this.http.get('http://192.168.1.136:8080/prodottiIdonei' ).pipe(
         map(res => res.json())
       ).subscribe(productList => {
       for(var x in productList.Prodotti){

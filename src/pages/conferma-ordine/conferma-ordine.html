@@ -11,8 +11,9 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content padding>
-  <label></label>
+<ion-content >
+ 
+  <ion-list>
  <ion-card>
   <ion-card-header>
    <b>Città punto ritiro scelto : {{nomePuntoRitiro}}</b>
@@ -21,20 +22,20 @@
    <b>Via: </b><p>{{viaPuntoRitiro}}</p>
   <b>Cap: </b> <p>{{capPuntoRitiro}}</p>
   </ion-card-content>
-
 </ion-card> 
+</ion-list>
 <ion-list >
-        <ion-item *ngFor="let visualizzaProdottiOrdinati of prodottiOrdinati">
-          <ion-card>
-            <ion-card-header>
-             <b>Hai ordinato questo prodotto:{{visualizzaProdottiOrdinati.nome}}</b>
-            </ion-card-header>
-            <ion-card-content>
-               <b>DataScadenza: </b><p>{{visualizzaProdottiOrdinati.datascadenza}}</p>
-               <b>CodiceProdotto: </b> <p>{{visualizzaProdottiOrdinati.codice}}</p>
-            </ion-card-content>
-          </ion-card> 
-        </ion-item>
-       </ion-list>
+  <ion-item *ngFor="let visualizzaProdottiOrdinati of prodottiOrdinati">
+  <ion-card>
+   <ion-card-header>
+   <b>Hai ordinato questo prodotto:</b><p>{{visualizzaProdottiOrdinati.nome}}</p>
+   </ion-card-header>
+   <ion-card-content>
+  <b>DataScadenza: </b><p>{{visualizzaProdottiOrdinati.datascadenza}}</p>
+  <b>CodiceProdotto: </b> <p>{{visualizzaProdottiOrdinati.codice}}</p>
+  </ion-card-content>
+    </ion-card> 
+  </ion-item>
+</ion-list>
      <button ion-button full color="light" (click)=" showAlert()">Conferma Ordine</button>  
 </ion-content>

@@ -40,7 +40,7 @@ this.data.response='';
   console.log('datascadenza: ',dataScadenza);
   var datiProdotto = JSON.stringify({nomeProdotto,codiceProdotto,dataScadenza});
   console.log('la var datiProdotto vale:  ', datiProdotto);
-  this.http.post('http://localhost:8080/inserisciProdotti', datiProdotto)
+  this.http.post('http://192.168.1.136:8080/inserisciProdotti', datiProdotto)
 .subscribe(data => {
 console.log('data log: ',data);
 //https://stackoverflow.com/questions/39574305/property-body-does-not-exist-on-type-response
