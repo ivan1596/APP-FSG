@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Http } from '@angular/http';
 import { map } from 'rxjs/operators';
+import { ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the HomeWorkPage page.
@@ -18,19 +19,29 @@ import { map } from 'rxjs/operators';
 })
 export class HomeWorkPage {
   data:any={};
-  constructor(public navCtrl: NavController, public navParams: NavParams, public barcodeScanner: BarcodeScanner,public http:Http) {
+  constructor(public toastCtrl: ToastController,public navCtrl: NavController, public navParams: NavParams, public barcodeScanner: BarcodeScanner,public http:Http) {
 this.data.nomeProdotto = '';
 this.data.codice ='';
 this.data.myDate='';
 this.data.response='';
   }
-
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Hai aggiunto al db: '+this.data.nomeProdotto,
+      duration: 3000
+    });
+    toast.present();
+  }
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad HomeWorkPage');
+  }
   inserisciProdotto(nomeProdotto:any,codiceProdotto:any,myDate:any){
    /*this.http.post('http://localhost:8080/inserisciProdotti').map(res =>res.json()).subscribe(data=>{console.log(data);
   });*/
   this.data.nomeProdotto=nomeProdotto;
   this.data.codice=codiceProdotto;
   this.data.myDate=myDate;
+  this.presentToast();
   //console.log('data vale: ',data); in questo modo ci stampa l'oggetto inserito tramite stringifly
   console.log('il nome di this.data è: ',this.data.nomeProdotto);
   var dataStringed = JSON.stringify(this.data.myDate);
@@ -45,14 +56,12 @@ this.data.response='';
 console.log('data log: ',data);
 //https://stackoverflow.com/questions/39574305/property-body-does-not-exist-on-type-response
 console.log('response: ',this.data.response);
+
 }, error => {
 console.log('Oooops!');
 });
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomeWorkPage');
-  }
   codice:any;
   scansiona(){
     this.codice={};

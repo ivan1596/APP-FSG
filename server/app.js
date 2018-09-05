@@ -145,6 +145,7 @@ sqlite.getPuntiRitiro(function(PuntiRitiro){
 
 app.post('/inserisciProdotti',function(req,res){
 console.log('req.body= ',req.body);
+console.log("prodottoInserito");
 var parsedInsert=JSON.parse(req.body);
 var nome = parsedInsert.nomeProdotto;
 var codice = parsedInsert.codiceProdotto;

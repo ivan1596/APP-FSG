@@ -143,126 +143,9 @@ var AddUtentePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminHomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_idonei_prodotti_idonei__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_utente_add_utente__ = __webpack_require__(127);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-//import {ProdottiPage} from '../prodotti/prodotti';
-
-/**
- * Generated class for the AdminHomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AdminHomePage = /** @class */ (function () {
-    function AdminHomePage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    AdminHomePage.prototype.goToAddUtente = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__add_utente_add_utente__["a" /* AddUtentePage */]);
-    };
-    AdminHomePage.prototype.goToProdottiPortale = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__prodotti_idonei_prodotti_idonei__["a" /* ProdottiIdoneiPage */]);
-    };
-    AdminHomePage.prototype.goToProdottiIdonei = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__prodotti_idonei_prodotti_idonei__["a" /* ProdottiIdoneiPage */]);
-    };
-    AdminHomePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AdminHomePage');
-    };
-    AdminHomePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-admin-home',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\admin-home\admin-home.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AdminHome</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <h2>\n\n    Benvenuto nell\'interfaccia gestionale dell\'amministratore del portale\n\n  </h2>\n\n\n\n  <button ion-button full (click)="goToProdottiPortale()">Visualizza i prodotti del Portale</button>\n\n  <button ion-button full  (click)="goToAddUtente()">Inserisci Utente</button>\n\n\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\admin-home\admin-home.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
-    ], AdminHomePage);
-    return AdminHomePage;
-}());
-
-//# sourceMappingURL=admin-home.js.map
-
-/***/ }),
-
-/***/ 129:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProdottiIdoneiPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var ProdottiIdoneiPage = /** @class */ (function () {
-    function ProdottiIdoneiPage(navCtrl, navParams, http) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.http = http;
-        this.prodottiAssortiti = [];
-        this.visualizzaProdotti = [];
-    }
-    ProdottiIdoneiPage.prototype.addCat = function () {
-        this.http.get('http://192.168.1.136:8080/addCatalogo').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (response) {
-            console.log('Catalogo Aggiornato');
-        });
-    };
-    ProdottiIdoneiPage.prototype.ionViewDidLoad = function () {
-        var _this = this;
-        this.http.get('http://192.168.1.136:8080/prodottiIdonei').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (productList) {
-            for (var x in productList.Prodotti) {
-                _this.visualizzaProdotti[x] = productList.Prodotti[x];
-                console.log("Oggetto nell indice: ", x + " ", _this.visualizzaProdotti[x]);
-            }
-        });
-    };
-    ProdottiIdoneiPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-prodotti-idonei',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\prodotti-idonei\prodotti-idonei.html"*/'<!--\n\n  Generated template for the ProdottiIdoneiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>ProdottiIdonei</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n          <ion-card>\n\n             \n\n            <ion-card-header>\n\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n               <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n              \n\n            </ion-card-content>\n\n         \n\n          </ion-card>\n\n        \n\n        </ion-item>\n\n       </ion-list>\n\n       <button ion-button (click)="addCat()">Aggiungi Al Catalogo</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\prodotti-idonei\prodotti-idonei.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
-    ], ProdottiIdoneiPage);
-    return ProdottiIdoneiPage;
-}());
-
-//# sourceMappingURL=prodotti-idonei.js.map
-
-/***/ }),
-
-/***/ 130:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CatalogoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ordina_prodotti_ordina_prodotti__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ordina_prodotti_ordina_prodotti__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(51);
@@ -330,13 +213,13 @@ var CatalogoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 131:
+/***/ 129:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrdinaProdottiPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__conferma_ordine_conferma_ordine__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__conferma_ordine_conferma_ordine__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_operators__ = __webpack_require__(51);
@@ -406,7 +289,7 @@ var OrdinaProdottiPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 132:
+/***/ 130:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -485,14 +368,14 @@ var ConfermaOrdinePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 133:
+/***/ 131:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeWorkPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__ = __webpack_require__(209);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_barcode_scanner__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -576,14 +459,14 @@ var HomeWorkPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 134:
+/***/ 132:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeAziendaPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_prodotti__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_prodotti__ = __webpack_require__(133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_ritiro_add_ritiro__ = __webpack_require__(126);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -625,7 +508,7 @@ var HomeAziendaPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 135:
+/***/ 133:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -701,6 +584,123 @@ var ProdottiPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 134:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminHomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prodotti_idonei_prodotti_idonei__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__add_utente_add_utente__ = __webpack_require__(127);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+//import {ProdottiPage} from '../prodotti/prodotti';
+
+/**
+ * Generated class for the AdminHomePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AdminHomePage = /** @class */ (function () {
+    function AdminHomePage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AdminHomePage.prototype.goToAddUtente = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__add_utente_add_utente__["a" /* AddUtentePage */]);
+    };
+    AdminHomePage.prototype.goToProdottiPortale = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__prodotti_idonei_prodotti_idonei__["a" /* ProdottiIdoneiPage */]);
+    };
+    AdminHomePage.prototype.goToProdottiIdonei = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__prodotti_idonei_prodotti_idonei__["a" /* ProdottiIdoneiPage */]);
+    };
+    AdminHomePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AdminHomePage');
+    };
+    AdminHomePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-admin-home',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\admin-home\admin-home.html"*/'\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>AdminHome</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <h2>\n\n    Benvenuto nell\'interfaccia gestionale dell\'amministratore del portale\n\n  </h2>\n\n\n\n  <button ion-button full (click)="goToProdottiPortale()">Visualizza i prodotti del Portale</button>\n\n  <button ion-button full  (click)="goToAddUtente()">Inserisci Utente</button>\n\n\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\admin-home\admin-home.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], AdminHomePage);
+    return AdminHomePage;
+}());
+
+//# sourceMappingURL=admin-home.js.map
+
+/***/ }),
+
+/***/ 135:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProdottiIdoneiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ProdottiIdoneiPage = /** @class */ (function () {
+    function ProdottiIdoneiPage(navCtrl, navParams, http) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.http = http;
+        this.prodottiAssortiti = [];
+        this.visualizzaProdotti = [];
+    }
+    ProdottiIdoneiPage.prototype.addCat = function () {
+        this.http.get('http://192.168.1.136:8080/addCatalogo').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (response) {
+            console.log('Catalogo Aggiornato');
+        });
+    };
+    ProdottiIdoneiPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.http.get('http://192.168.1.136:8080/prodottiIdonei').pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["map"])(function (res) { return res.json(); })).subscribe(function (productList) {
+            for (var x in productList.Prodotti) {
+                _this.visualizzaProdotti[x] = productList.Prodotti[x];
+                console.log("Oggetto nell indice: ", x + " ", _this.visualizzaProdotti[x]);
+            }
+        });
+    };
+    ProdottiIdoneiPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-prodotti-idonei',template:/*ion-inline-start:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\prodotti-idonei\prodotti-idonei.html"*/'<!--\n\n  Generated template for the ProdottiIdoneiPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>ProdottiIdonei</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-list >\n\n        <ion-item *ngFor="let visualizzaProdottiCompleti of visualizzaProdotti">\n\n          <ion-card>\n\n             \n\n            <ion-card-header>\n\n             <b>{{visualizzaProdottiCompleti.nome}}</b>\n\n            </ion-card-header>\n\n            <ion-card-content>\n\n               <b>DataScadenza: </b><p>{{ visualizzaProdottiCompleti.datascadenza}}</p>\n\n               <b>CodiceProdotto: </b> <p>{{ visualizzaProdottiCompleti.codice}}</p> \n\n               <b>Idoneo: </b> <p>{{ visualizzaProdottiCompleti.idoneo}}</p> \n\n              \n\n            </ion-card-content>\n\n         \n\n          </ion-card>\n\n        \n\n        </ion-item>\n\n       </ion-list>\n\n       <button ion-button (click)="addCat()">Aggiungi Al Catalogo</button>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\raffa\visualWorkspace\APP-FSGlogin vecchio\src\pages\prodotti-idonei\prodotti-idonei.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]])
+    ], ProdottiIdoneiPage);
+    return ProdottiIdoneiPage;
+}());
+
+//# sourceMappingURL=prodotti-idonei.js.map
+
+/***/ }),
+
 /***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -708,7 +708,7 @@ var ProdottiPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeUtentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__catalogo_catalogo__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__catalogo_catalogo__ = __webpack_require__(128);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -781,11 +781,11 @@ var map = {
 		10
 	],
 	"../pages/admin-home/admin-home.module": [
-		410,
+		413,
 		9
 	],
 	"../pages/catalogo/catalogo.module": [
-		411,
+		410,
 		8
 	],
 	"../pages/conferma-ordine/conferma-ordine.module": [
@@ -793,31 +793,31 @@ var map = {
 		7
 	],
 	"../pages/home-azienda/home-azienda.module": [
-		413,
+		414,
 		6
 	],
 	"../pages/home-utente/home-utente.module": [
-		414,
+		411,
 		5
 	],
 	"../pages/home-work/home-work.module": [
-		415,
+		416,
 		4
 	],
 	"../pages/login/login.module": [
-		416,
+		419,
 		3
 	],
 	"../pages/ordina-prodotti/ordina-prodotti.module": [
-		417,
+		418,
 		2
 	],
 	"../pages/prodotti-idonei/prodotti-idonei.module": [
-		418,
+		417,
 		1
 	],
 	"../pages/prodotti/prodotti.module": [
-		419,
+		415,
 		0
 	]
 };
@@ -861,21 +861,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_work_home_work__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_work_home_work__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_http__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_camera__ = __webpack_require__(407);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_barcode_scanner__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prodotti_prodotti__ = __webpack_require__(135);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_azienda_home_azienda__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_admin_home_admin_home__ = __webpack_require__(128);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_prodotti_idonei_prodotti_idonei__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_barcode_scanner__ = __webpack_require__(191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_prodotti_prodotti__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_azienda_home_azienda__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_admin_home_admin_home__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_prodotti_idonei_prodotti_idonei__ = __webpack_require__(135);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_add_ritiro_add_ritiro__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_home_utente_home_utente__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_catalogo_catalogo__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_ordina_prodotti_ordina_prodotti__ = __webpack_require__(131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_conferma_ordine_conferma_ordine__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_catalogo_catalogo__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_ordina_prodotti_ordina_prodotti__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_conferma_ordine_conferma_ordine__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_add_utente_add_utente__ = __webpack_require__(127);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -932,16 +932,16 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/add-ritiro/add-ritiro.module#AddRitiroPageModule', name: 'AddRitiroPage', segment: 'add-ritiro', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/add-utente/add-utente.module#AddUtentePageModule', name: 'AddUtentePage', segment: 'add-utente', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/admin-home/admin-home.module#AdminHomePageModule', name: 'AdminHomePage', segment: 'admin-home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/catalogo/catalogo.module#CatalogoPageModule', name: 'CatalogoPage', segment: 'catalogo', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/conferma-ordine/conferma-ordine.module#ConfermaOrdinePageModule', name: 'ConfermaOrdinePage', segment: 'conferma-ordine', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/home-azienda/home-azienda.module#HomeAziendaPageModule', name: 'HomeAziendaPage', segment: 'home-azienda', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-utente/home-utente.module#HomeUtentePageModule', name: 'HomeUtentePage', segment: 'home-utente', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/conferma-ordine/conferma-ordine.module#ConfermaOrdinePageModule', name: 'ConfermaOrdinePage', segment: 'conferma-ordine', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/admin-home/admin-home.module#AdminHomePageModule', name: 'AdminHomePage', segment: 'admin-home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home-azienda/home-azienda.module#HomeAziendaPageModule', name: 'HomeAziendaPage', segment: 'home-azienda', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/prodotti/prodotti.module#ProdottiPageModule', name: 'ProdottiPage', segment: 'prodotti', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home-work/home-work.module#HomeWorkPageModule', name: 'HomeWorkPage', segment: 'home-work', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/ordina-prodotti/ordina-prodotti.module#OrdinaProdottiPageModule', name: 'OrdinaProdottiPage', segment: 'ordina-prodotti', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/prodotti-idonei/prodotti-idonei.module#ProdottiIdoneiPageModule', name: 'ProdottiIdoneiPage', segment: 'prodotti-idonei', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/prodotti/prodotti.module#ProdottiPageModule', name: 'ProdottiPage', segment: 'prodotti', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/ordina-prodotti/ordina-prodotti.module#OrdinaProdottiPageModule', name: 'OrdinaProdottiPage', segment: 'ordina-prodotti', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
@@ -1030,9 +1030,9 @@ var MyApp = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work_home_work__ = __webpack_require__(133);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_azienda_home_azienda__ = __webpack_require__(134);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_home_admin_home__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_work_home_work__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_azienda_home_azienda__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_home_admin_home__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_utente_home_utente__ = __webpack_require__(136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operators__ = __webpack_require__(51);
